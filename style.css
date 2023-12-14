@@ -1,0 +1,813 @@
+/* 
+Estructura basica de css
+
+elemento {
+    propiedad: valor;
+}
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+Colores verdes 
+#618264
+#79AC78
+#B0D9B1
+#D0E7D2
+
+*/
+/* importo tipografia de google font ej: Inter Tight */
+/* font-family: 'Inter Tight', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+
+/* importo tipografia de google font ej: Rubik */
+/* font-family: 'Rubik', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&family=Rubik&display=swap');
+
+/* importo tipografia de google font ej: Noto Serif */
+/* font-family: 'Noto Serif', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&family=Noto+Serif:wght@500&family=Rubik&display=swap');
+
+
+/* 1 rem = 16px */
+
+html{
+    font-family: 'Noto Serif', serif;
+}
+
+/*------------- Header ---------------*/
+/* Estilos del Header: Se crea un header unico que repetiremos en cada html, en vez de usar una clase */
+.navbar{
+    display: none;
+    background-color: #D0E7D2; 
+    border: #79AC78 solid 2px;
+}
+/* header{ */
+.menu-desktop{    
+    padding: 0.6rem;
+    background-color: #D0E7D2;
+    /* visualización horizontalmente los items */
+    display: flex;
+    /* alinea horizontalmente los items */
+    justify-content: space-around;
+    /*alinea vertical los items */
+    align-items: center;
+    border-radius: 5px;
+    border:gray solid 1px;
+    /*dejamos fijo el header a medida que scrolleamos*/
+    position: sticky;
+    top: 0%;
+    z-index: 1;
+}
+
+/* modificamos solo las imagenes que hayan en el header */
+header a{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: #618264;
+    font-weight: bold;
+    text-decoration: none; 
+    font-size: 0.9rem;
+    
+}
+.imagen-header{
+    background-image: url(img/HEADER.jpg);
+    width: 250px;
+    height: 56px;
+}
+
+
+/* -------------- Footer --------------*/
+/* Defino estilos para el footer unico */
+footer{
+    display:flex;
+    align-items: center;
+    background-color: #358b33;
+    border-radius: 5px;
+    margin: 0.3%;
+    border: gray solid 1px;
+    padding: 0.4rem;
+}
+footer img{
+    width: 28px; 
+    margin: 5px;
+}
+footer p{
+    color: rgb(245, 239, 239);
+    font-weight: bolder;
+    width: 85%;
+    text-align: right;
+} 
+
+/* ---------------Estilos Index.html------------- */ 
+
+/*--------------- Pagina Index------------ */
+
+/* Definimos estilos para el banner principal */
+.grid-banner-contenedor{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 400px;    
+  
+}
+.grid-texto{
+    background-color: rgb(5, 170, 5);    
+    border-radius: 5px 0px 0px 5px;
+}
+
+.texto-superior{
+    color: white;
+    font-size: 1.4rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    bottom: -255px;
+    right: -20px;
+    text-shadow: 1px 1px 2px rgb(78, 78, 78);
+    
+}
+.texto-inferior{
+    color: white;
+    font-size: 2.1rem;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    bottom: -235px;
+    right: -20px;
+    text-shadow: 1px 1px 2px rgb(78, 78, 78);
+}
+.grid-imagen img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+/* Palabras resaltadas en color Verde */
+.palabra-verde{
+    color: #1A5D1A;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bolder;
+    font-size: 23px;
+}
+
+/*-Separador-*/
+.separador {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    height: 30px;
+    background-image: linear-gradient(to right, transparent, #757474, transparent);  
+ }
+ /*-Bloque Quienes Somos-*/
+.quienes-somos {
+    height: 220px;
+    margin-top: 15px;
+}
+.quienes-somos h2{
+    text-decoration: overline underline;
+    text-decoration-color: #1A5D1A;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+    text-align:center;
+    font-size:50px;
+    font-family:'wire one', serif;
+    font-weight:bolder; 
+}
+
+.quienes-somos p{
+    font-size:20px;
+    font-family:'Raleway', serif;
+    text-align:center;
+    
+} 
+
+/*-Gradiente Superior-*/
+
+.gradiente-superior{
+  width:100%;
+  height:100px;
+  background: linear-gradient(to right bottom, #fff 49%, rgb(5, 170, 5) 50%),    linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+/*-Bloque Servicios-*/
+.green-block {
+    background: rgb(5, 170, 5);
+    height: 600px;
+    color:#faf9fa;
+       
+}
+.green-block h2{
+    text-align:center;
+    font-size:55px;
+    font-family:'wire one', serif;
+    font-weight:bolder;
+    text-decoration: overline underline;
+    text-decoration-color: #1A5D1A;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px; 
+
+}
+.green-block p{
+    font-size:18px;
+    font-family:'Raleway', serif;
+    text-align: center;
+    
+}
+/*-Gradiente Inferior-*/
+.gradiente-inferior{
+   width:100%;
+   height:70px;
+   background: linear-gradient(to left bottom, rgb(5, 170, 5) 49%, #fff 50%),linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+/*-Card Servicios-*/
+.card-body{
+    background-color: green;
+    text-align: left;
+}
+
+.card-title, .card-text{
+    color: #fff;
+    text-align:center;
+}
+ /*-Bloque Somos Eco Minera-*/
+.somos-ecominera {
+    /* height: 420px; */
+    margin-top: 15px;
+    text-align: center;
+}
+.somos-ecominera img{
+    width: 210px;
+}
+/* .somos-ecominera h2{
+    text-decoration: overline underline;
+    text-decoration-color: #1A5D1A;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 8px;
+    text-align:center;
+    font-size:50px;
+    font-family:'wire one', serif;
+    font-weight:bolder; 
+}  */
+.somos-ecominera p{
+    margin-top: 5px;
+    font-size:20px;
+    font-family:'Raleway', serif;
+    margin-bottom: 50px;
+  
+} 
+
+
+/*----------------- Pagina Nosotros -----------------*/
+
+.grid-nosotros-contenedor{
+    display:grid;
+     /* definir áreas */
+    grid-template-areas: 
+    "foto1 texto1 texto1"
+    "foto1 foto2 foto2"
+    "texto2 foto3 texto3";
+
+    /* ancho de cada columna */
+    grid-template-columns: 28% 33% 30%;
+    /* alto de cada fila */
+    grid-template-rows: 250px 180px 300px ;
+
+    /* acomodar a los hijos */
+    justify-items: center;
+    align-items: center;
+
+    /* acomodar grilla */
+    justify-content: center ;
+
+    /* espacios entre filas y columnas */
+    row-gap: 35px;
+    column-gap: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.grid-nosotros-contenedor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+.grid-nosotros-contenedor p{
+    text-align: justify;
+    margin: 0 25px;
+    color: #6c6d6e;
+    font-size: 20px;
+}
+.grid-imagen1{   
+    grid-area: foto1;   
+    
+}
+.imagen-queries{
+    display: none;
+}
+.grid-texto1{
+    grid-area: texto1;
+}
+.grid-imagen2{
+    grid-area: foto2;
+
+}
+.grid-texto2{
+    grid-area: texto2;
+}
+.grid-imagen3{
+    grid-area: foto3;
+    
+}
+.grid-texto3{
+    grid-area: texto3;
+}
+
+
+/*------------------ Pagina Contactanos --------------*/
+.donde-estamos-contenedor{
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    
+}
+.divisor{
+    border-left: grey solid 3px;
+    padding-left: 5%;
+    margin-left: 5%;
+}
+.donde-estamos{
+    margin: 3%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    font-size: 130%;
+    color: #393b39;
+}
+.donde-estamos h3{
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+/*---------------Pagina Trabaja con Nosotros -------------*/
+.trabaja-contenedor{
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    position: relative;
+}
+.trabaja-imagen img{
+    width: 65%;
+    height: 100%;
+    border-radius: 5%;
+    position:relative;
+    z-index: -2;
+}
+.trabaja-form {
+    background:rgba(57, 179, 41, 0.801);
+    width: 690px;
+    height: 92%;
+    padding-top: 2%;
+    padding-left: 6%;
+    border-radius: 10px;
+    font-size: 100%;  
+    position: absolute;
+    left: 45%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  
+}
+.trabaja-form li{
+    list-style-type: none;
+}
+.trabaja-form p{
+    align-items: center;
+    
+}
+
+
+/*---------------- Pagina Servicios -------------*/
+
+.grid-servicios-contenedor{
+    display: grid;
+     /* definir áreas */
+    grid-template-areas: 
+    "img1 parrafo1 parrafo1"
+    "parrafo2 parrafo2 img2"
+    "img3 parrafo3 parrafo3";
+
+    /* ancho de cada columna */
+    grid-template-columns: 35% 25% 35%;
+    /* alto de cada fila */
+    grid-template-rows: 280px 280px 280px ;
+
+    /* acomodar a los hijos */
+    justify-items: center;
+    align-items:center;
+
+    /* acomodar grilla */
+    justify-content: center ;
+
+    /* espacios entre filas y columnas */
+    row-gap: 15px;
+    column-gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.grid-servicios-contenedor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+.grid-servicios-img1{
+    grid-area: img1;
+}
+.grid-texto-perfo{
+    grid-area: parrafo1;
+    text-align: justify;
+    margin: 0 25px;
+    color: #6c6d6e;
+    font-size: 18px;
+}
+.grid-servicios-img2{
+    grid-area: img2;
+}
+.grid-texto-movimiento{
+    grid-area: parrafo2;
+    text-align: justify;
+    margin: 0 25px;
+    color: #6c6d6e;
+    font-size: 18px;
+}
+.grid-servicios-img3{
+    grid-area: img3;
+    
+}
+.grid-texto-equipamiento{
+    grid-area: parrafo3;
+    text-align: justify;
+    margin: 0 25px;
+    color: #6c6d6e;
+    font-size: 18px;
+}
+/*----------------Pagina RSE-----------------*/
+.rse-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    height: 620px;
+    justify-content: center;
+
+}
+.imagen-rse{
+    margin-right: 1.4%;
+    position: absolute;
+}
+.rse-texto-contenedor{
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    background:rgba(235, 235, 240, 0.801);
+    width: 90%;
+    height: 500px;
+    padding: 20px;
+    z-index: 1;
+    position:absolute;
+    top: 30%;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+.texto-titulo-rse{
+    font-size: 25px;
+    color: green;
+    font-weight: bolder;
+}
+
+/*----------------Pagina Galeria ------------------*/
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+/*---------------- Media Query ----------------*/
+/* Celulares menos de 500px */
+@media only screen and (max-width:480px){
+    /*--------header--------*/
+    .menu-desktop{
+        display: none;
+    }
+    .navbar{
+        display: block;
+        
+        
+    }
+    .imagen-header{
+        /* background-image: url(img/EcoLogoCelular.png); */
+        background-image: url(img/HEADER.jpg); 
+        width: 60%;
+        background-repeat: no-repeat;
+
+    }
+
+    /*-------footer-------*/
+    footer img{
+        width: 20px; 
+        margin: 1px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    /*--------Pagina Index---------*/
+    .grid-banner-contenedor{
+        display: block;
+    }
+    .grid-texto{
+        display: none;
+    } 
+    /*-Seccion Servicios Index-*/
+    
+    .separador{
+        height: 10px;
+    }
+    .green-block{
+        height: 900px;
+    }
+    .quienes-somos h2{
+        font-size:38px;
+    }
+    .quienes-somos p{
+        font-size:18px;  
+    } 
+    .green-block h2{
+        font-size:38px;   
+    }
+    .green-block p{
+        font-size:20px;
+        font-family:'Raleway', serif;
+        text-align: center;
+        
+    }
+    /*-Acomodo las Cards-*/
+    .row{
+        margin: 0;
+        justify-content: center;
+    }
+    .col{
+        width: 330px;
+        height: 260px;       
+    }
+    .card-text{
+        display: none;
+    } 
+    /*-Sección Somos Eco-*/
+     
+    .somos-ecominera p{
+        font-size:18px;  
+    } 
+    /*--------------Pagina Nosotros-----------*/
+    
+    .grid-nosotros-contenedor{
+        display: block;          
+    }  
+    .grid-nosotros-contenedor img{
+        width: 99%;
+        height: 180px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        margin: 2px;
+    }
+    .imagen-desktop{
+        display:none;        
+
+    }
+    .imagen-queries{
+        display: inline;   
+    }
+    .grid-nosotros-contenedor p{
+        font-size: 16px;
+        
+    }
+    .grid-texto1{
+        padding-top: 20px;
+    }
+       
+    .grid-texto2{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    } 
+    .grid-imagen3{
+        height: 10px;
+    }
+     /*-------------Pagina Servicios-----------*/
+    
+     .grid-servicios-contenedor{
+        display: block;
+            
+    }   
+    .grid-servicios-contenedor img{
+        width: 99%;
+        height: 160px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        margin: 2px;
+    }
+    .grid-servicios-contenedor p{
+        font-size: 14px;
+    }
+    /*-------------Pagina Trabaja------------*/
+    .trabaja-contenedor{
+        flex-direction: column;
+        margin: 0;
+       
+    }
+    .trabaja-imagen img{
+        width: 100% ;
+        border-radius: 10px;
+        
+    }
+    .trabaja-form{
+        position: relative;
+        left: 0;
+        bottom: 100px;
+        width: 98%;
+        z-index: -1;
+        padding-bottom: 8%;
+    }
+    /*-------------Contactanos----------*/
+    .donde-estamos-contenedor{
+        flex-direction: column-reverse;
+    }    
+    .divisor{
+        border-left: 0;
+        border-bottom: #6c6d6e solid 3px;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+    .gmap_canvas{
+        width: 100%;
+        height: 150px;
+        position: relative;
+        z-index: -1;
+        align-items: center;
+        left: 25px;
+    }
+    .donde-estamos{
+        font-size: 95%;
+    }  
+    /*-------------RSE----------*/
+    .rse-contenedor{
+        flex-direction: row;
+        height: 940px;
+    }
+    .imagen-rse img{
+        width: 100%;
+        height: 230px;
+    }
+    .rse-texto-contenedor{
+        width: 95%;
+        height: 780px;
+        top: 50%;
+    } 
+    .texto-titulo-rse{
+        font-size: 18px;
+    }
+    .texto-rse{
+        font-size: 14px;
+    }
+}
+/*Tablet entre 481 y 978*/
+
+@media only screen and (min-width:481px) and (max-width:978px){
+    /*--------header--------*/
+    header{
+        flex-wrap: wrap;
+        
+    }
+    header a{
+        size: 4px;
+    }
+    .imagen-header{
+        background-image: url(img/EcoLogoCelular.png);
+        width: 40px;
+        height: 36px;
+        
+    }
+    
+    /*-------footer-------*/
+    footer img{
+        width: 20px; 
+        margin: 1px;
+    }
+    footer p{
+        font-size: 12px;
+    }
+    /*--------Index---------*/
+    .grid-banner-contenedor{
+        display: block;
+    }
+    .grid-texto{
+        display: none;
+    }
+    /*----- Seccion Servicios Index-------*/
+    .banner-servicios{
+        font-size: 1rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    .banner-servicios h2{
+        font-size: 1.5rem;
+       
+        padding: 10px;
+        
+    }
+    .servicios-contenedor h3{
+        font-size: 1rem;
+    }
+    .servicios-perfo img{
+        width: 90%;
+    }
+    .servicios-ms img{
+        width: 78%;
+        margin-left: 25px;
+    }
+    /*-------------Trabaja------------*/
+    .trabaja-contenedor{
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    .trabaja-imagen img{
+        width: 100%;
+        border-radius: 10px;
+    
+    }
+    .trabaja-form{
+        position: relative;
+        left: 0;
+        bottom: 100px;
+        width: 98%;   
+        z-index: -1;
+        padding-bottom: 9%;
+    }
+    /*-------------Contactanos----------*/
+    .donde-estamos-contenedor{
+        flex-direction: column-reverse;
+    }    
+    .divisor{
+        border-left: 0;
+        border-bottom: #6c6d6e solid 3px;
+        padding-left: 0;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+    .gmap_canvas{
+        width: 100%;
+        height: 150px;
+        position: relative;
+        z-index: -1;
+        align-items: center;
+        left: 25px;
+    }
+    .donde-estamos{
+        font-size: 95%;
+    }  
+    /*--------------Nosotros-----------*/
+    
+    .grid-nosotros-contenedor{
+        display: block;
+            
+    }   
+    .grid-nosotros-contenedor img{
+        width: 99%;
+        height: 200px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        margin: 2px;
+    }
+    .grid-imagen1{
+        display: none;
+    }
+    .grid-texto1{
+        padding-bottom: 20px;
+    }
+    .grid-texto2{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    /*--------------Servicios-----------*/
+    
+    .grid-servicios2-contenedor{
+        display: block;
+            
+    }   
+    .grid-servicios2-contenedor img{
+        width: 99%;
+        height: 180px;
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        margin: 2px;
+    }
+    
+}

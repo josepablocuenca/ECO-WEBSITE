@@ -660,7 +660,7 @@ footer p{
     /*-------------RSE----------*/
     .rse-contenedor{
         flex-direction: row;
-        height: 940px;
+        height: 1000px;
     }
     .imagen-rse img{
         width: 100%;

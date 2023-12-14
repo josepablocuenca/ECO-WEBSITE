@@ -508,9 +508,9 @@ footer p{
     .imagen-header{
         /* background-image: url(img/EcoLogoCelular.png); */
         background-image: url(img/HEADER.jpg); 
-        width: 65%;
+        /* width: 70%; */
         background-repeat: no-repeat;
-
+        object-fit: cover;
     }
 
     /*-------footer-------*/

@@ -52,7 +52,7 @@
                     <a class="nav-link" href="galeria.html">GALERIA</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="trabaja.html">TRABAJA</a>
+                    <a class="nav-link" href="trabaja.html">TRABAJA CON NOSOTROS</a>
                   </li> 
                 </ul>
               </div>
@@ -64,33 +64,37 @@
   </header>
    <main>
         <section class="trabaja-contenedor">
-            <div class="trabaja-imagen">
-                <img src="../img/manos.jpg" alt="Excavadora">
+            <div class="imagen-contenedor">
+                 <div class="imagen-trabaja"></div><!-- <img src="../img/manos.jpg" alt="Excavadora"> -->
             </div>
-            <div class="trabaja-form">
-                <h3>Queres trabajar con nosotros?</h3>
-                <p>Completa con tus datos y envialo!</p>
-                <form action="/my-handling-form-page" method="post">
-                    <ul>
-                        <li>
-                          <p><label for="nombre">Nombre:</label>
-                           <input type="text" id="nombre" name="user_name" /></p>          
-                        </li>
-                        <li>
-                           <p> <label for="apellido">Apellido:</label>
-                           <input type="text" id="apellido" name="user_name" /> </p>
-                        </li>
-                        <li>
-                            <p><label for="mail">E-mail:</label>
-                            <input type="email" id="mail" name="user_mail" /> </p>
-                        </li>
-                        <li>
-                            <p><label for="msg">Mensaje:</label>
-                            <textarea id="msg" name="user_message"></textarea></p>
-                        </li>
-                    </ul>
-                  </form>
-                  
+            <h3 class="separador"></h3>
+            <div class="form-contenedor">
+                <div class="pregunta-form">
+                  <h3>Queres trabajar con nosotros?</h3>
+                  <p>Completa con tus datos y envialo!</p>
+                </div>
+                <div class="trabaja-form">
+                  <form action="/my-handling-form-page" method="post">
+                      <ul>
+                          <li>
+                            <p><label for="nombre">Nombre:</label></p>
+                            <p><input type="text" id="nombre" name="user_name" /></p>          
+                          </li>
+                          <li>
+                             <p> <label for="apellido">Apellido:</label></p>
+                              <p><input type="text" id="apellido" name="user_name" /> </p>
+                          </li>
+                          <li>
+                              <p><label for="mail">E-mail:</label></p>
+                              <p><input type="email" id="mail" name="user_mail" /> </p>
+                          </li>
+                          <li>
+                              <p><label for="msg">Mensaje:</label></p>
+                              <p><textarea id="msg" name="user_message"></textarea></p>
+                          </li>
+                      </ul>
+                    </form>
+                  </div>
                 
             </div>
            

@@ -241,16 +241,7 @@ footer p{
 .somos-ecominera img{
     width: 210px;
 }
-/* .somos-ecominera h2{
-    text-decoration: overline underline;
-    text-decoration-color: #1A5D1A;
-    text-decoration-thickness: 4px;
-    text-underline-offset: 8px;
-    text-align:center;
-    font-size:50px;
-    font-family:'wire one', serif;
-    font-weight:bolder; 
-}  */
+
 .somos-ecominera p{
     margin-top: 5px;
     font-size:20px;
@@ -283,8 +274,8 @@ footer p{
     justify-content: center ;
 
     /* espacios entre filas y columnas */
-    row-gap: 35px;
-    column-gap: 25px;
+    row-gap: 25px;
+    column-gap: 15px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -324,7 +315,72 @@ footer p{
 .grid-texto3{
     grid-area: texto3;
 }
+/*---------------- Pagina Servicios -------------*/
 
+.grid-servicios-contenedor{
+    display: grid;
+     /* definir áreas */
+    grid-template-areas: 
+    "img1 parrafo1 parrafo1"
+    "parrafo2 parrafo2 img2"
+    "img3 parrafo3 parrafo3";
+
+    /* ancho de cada columna */
+    grid-template-columns: 35% 25% 35%;
+    /* alto de cada fila */
+    grid-template-rows: 280px 280px 280px ;
+
+    /* acomodar a los hijos */
+    justify-items: center;
+    align-items:center;
+
+    /* acomodar grilla */
+    justify-content: center ;
+
+    /* espacios entre filas y columnas */
+    row-gap: 100px;
+    column-gap: 15px;
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+.grid-servicios-contenedor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+.grid-servicios-img1{
+    grid-area: img1;
+}
+.grid-texto-perfo{
+    grid-area: parrafo1;
+    text-align: justify;
+    padding-top: 30px;
+    margin: 0 25px;
+    color: #6c6d6e;
+    font-size: 18px;
+}
+.grid-servicios-img2{
+    grid-area: img2;
+}
+.grid-texto-movimiento{
+    grid-area: parrafo2;
+    text-align: justify;
+    margin: 0 25px;
+    color: #6c6d6e;
+    font-size: 18px;
+}
+.grid-servicios-img3{
+    grid-area: img3;
+    
+}
+.grid-texto-equipamiento{
+    grid-area: parrafo3;
+    text-align: justify;
+    margin: 0 25px;
+    color: #6c6d6e;
+    font-size: 18px;
+}
 
 /*------------------ Pagina Contactanos --------------*/
 .donde-estamos-contenedor{
@@ -352,105 +408,56 @@ footer p{
 
 /*---------------Pagina Trabaja con Nosotros -------------*/
 .trabaja-contenedor{
-    display: flex;
-    align-items: center;
-    margin: 2%;
     position: relative;
+    display: flex;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    
 }
-.trabaja-imagen img{
-    width: 65%;
-    height: 100%;
-    border-radius: 5%;
-    position:relative;
-    z-index: -2;
+.separador{
+    display: none;
 }
-.trabaja-form {
+.imagen-contenedor{
+    display: flex;
+    width: 50%;
+    
+}
+.imagen-trabaja{
+    background-image: url(img/manos.jpg);
+    width: 100%;
+    height: 430px;
+    border-radius: 10px;   
+    background-position: center;
+    /* background-size: cover; */
+}
+.form-contenedor{
     background:rgba(57, 179, 41, 0.801);
-    width: 690px;
-    height: 92%;
-    padding-top: 2%;
-    padding-left: 6%;
-    border-radius: 10px;
-    font-size: 100%;  
-    position: absolute;
-    left: 45%;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-  
-}
+    border-radius: 8px;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 1%;
+    height: 400px;
+    position: absolute;
+    left: 45%; 
+    top: 3%;
+    width: 53%;
+    text-align: justify;
+    justify-content: center;
+    align-content: center;
+    
+} 
 .trabaja-form li{
     list-style-type: none;
+   
 }
 .trabaja-form p{
-    align-items: center;
-    
+    padding: 0;
+    margin: 0;
 }
 
 
-/*---------------- Pagina Servicios -------------*/
-
-.grid-servicios-contenedor{
-    display: grid;
-     /* definir áreas */
-    grid-template-areas: 
-    "img1 parrafo1 parrafo1"
-    "parrafo2 parrafo2 img2"
-    "img3 parrafo3 parrafo3";
-
-    /* ancho de cada columna */
-    grid-template-columns: 35% 25% 35%;
-    /* alto de cada fila */
-    grid-template-rows: 280px 280px 280px ;
-
-    /* acomodar a los hijos */
-    justify-items: center;
-    align-items:center;
-
-    /* acomodar grilla */
-    justify-content: center ;
-
-    /* espacios entre filas y columnas */
-    row-gap: 15px;
-    column-gap: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-.grid-servicios-contenedor img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
-}
-.grid-servicios-img1{
-    grid-area: img1;
-}
-.grid-texto-perfo{
-    grid-area: parrafo1;
-    text-align: justify;
-    margin: 0 25px;
-    color: #6c6d6e;
-    font-size: 18px;
-}
-.grid-servicios-img2{
-    grid-area: img2;
-}
-.grid-texto-movimiento{
-    grid-area: parrafo2;
-    text-align: justify;
-    margin: 0 25px;
-    color: #6c6d6e;
-    font-size: 18px;
-}
-.grid-servicios-img3{
-    grid-area: img3;
-    
-}
-.grid-texto-equipamiento{
-    grid-area: parrafo3;
-    text-align: justify;
-    margin: 0 25px;
-    color: #6c6d6e;
-    font-size: 18px;
-}
 /*----------------Pagina RSE-----------------*/
 .rse-contenedor{
     display: flex;
@@ -620,20 +627,29 @@ footer p{
     .trabaja-contenedor{
         flex-direction: column;
         margin: 0;
-       
+        margin-bottom: 20px;
     }
-    .trabaja-imagen img{
-        width: 100% ;
-        border-radius: 10px;
-        
+    .separador{
+        display: block;
+        height: 15px;
+
     }
-    .trabaja-form{
+    .imagen-contenedor{
+        display: block;
+        width: 100%;
+    }
+    .imagen-trabaja{
+        height: 250px;
+        background-size:cover;
+        background-position-y: top;
+
+    }
+    .form-contenedor{
         position: relative;
+        width: 100%;
+        top: 0;
         left: 0;
-        bottom: 100px;
-        width: 98%;
-        z-index: -1;
-        padding-bottom: 8%;
+        height: 380px;
     }
     /*-------------Contactanos----------*/
     .donde-estamos-contenedor{
@@ -661,15 +677,17 @@ footer p{
     .rse-contenedor{
         flex-direction: row;
         height: 1000px;
+        
     }
     .imagen-rse img{
+        position: relative;
         width: 100%;
         height: 230px;
     }
     .rse-texto-contenedor{
         width: 95%;
-        height: 780px;
-        top: 20%;
+        height: 730px;
+        top: 25%;
     } 
     .texto-titulo-rse{
         font-size: 18px;

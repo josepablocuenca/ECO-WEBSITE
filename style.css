@@ -43,12 +43,7 @@ html{
 
 /*------------- Header ---------------*/
 /* Estilos del Header: Se crea un header unico que repetiremos en cada html, en vez de usar una clase */
-.navbar{
-    display: none;
-    background-color: #D0E7D2; 
-    border: #79AC78 solid 2px;
-}
-/* header{ */
+
 .menu-desktop{    
     padding: 0.6rem;
     background-color: #D0E7D2;
@@ -62,10 +57,14 @@ html{
     border:gray solid 1px;
     /*dejamos fijo el header a medida que scrolleamos*/
     position: sticky;
-    top: 0%;
+    top: 0;
     z-index: 1;
 }
-
+.navbar{
+    display: none;
+    background-color: #D0E7D2; 
+    border: #79AC78 solid 2px;
+}
 /* modificamos solo las imagenes que hayan en el header */
 header a{
     margin-left: 1rem;
@@ -490,16 +489,34 @@ footer p{
 }
 
 /*----------------Pagina Galeria ------------------*/
-
-.carousel-item {
-    height: 65vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
+.somos-eco{
+    text-align: center;
+} 
+.galeria-eco{
+    display: flex;
+    justify-content: center;
+}
+.carousel{
+    margin: 8px;
+    padding: 50px;
+    width: 800px;
+    background:rgba(220, 220, 226, 0.801);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.55);
+}
+/* .img-normalizada{
+	width: 400px;
+	height: 500px;
+	object-fit: cover;
+} */
+.carousel-inner > .carousel-item > img {
+    object-fit:scale-down;
+    height: 70vh;
+    width: 100%;
+    align-content: center;
+    
+}
+ 
 /*---------------- Media Query ----------------*/
 /* Celulares menos de 500px */
 @media only screen and (max-width:480px){
@@ -695,6 +712,21 @@ footer p{
     .texto-rse{
         font-size: 14px;
     }
+    /*----------Galeria---------*/
+    .somos-eco{
+        padding-top: 80px;
+      
+    }
+    .somos-eco hr{
+        display: none;
+    }
+    .carousel{
+        padding: 50px;
+        height: 380px;
+    }
+    .carousel-inner > .carousel-item > img {
+        height: 30vh;
+    }  
 }
 /*Tablet entre 481 y 978*/
 

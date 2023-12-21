@@ -56,17 +56,13 @@ html{
     border-radius: 5px;
     border:gray solid 1px;
     /*dejamos fijo el header a medida que scrolleamos*/
-    position: sticky;
+    /* position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1; */
 }
-.navbar{
-    display: none;
-    background-color: #D0E7D2; 
-    border: #79AC78 solid 2px;
-}
+
 /* modificamos solo las imagenes que hayan en el header */
-header a{
+.menu-desktop a{
     margin-left: 1rem;
     margin-right: 1rem;
     color: #618264;
@@ -80,7 +76,11 @@ header a{
     width: 250px;
     height: 56px;
 }
-
+.navbar{
+    display: none;
+    background-color: #D0E7D2; 
+    border: #79AC78 solid 2px;
+}
 
 /* -------------- Footer --------------*/
 /* Defino estilos para el footer unico */
@@ -164,7 +164,7 @@ footer p{
  /*-Bloque Quienes Somos-*/
 .quienes-somos {
     height: 220px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 .quienes-somos h2{
     text-decoration: overline underline;
@@ -172,8 +172,8 @@ footer p{
     text-decoration-thickness: 4px;
     text-underline-offset: 8px;
     text-align:center;
-    font-size:50px;
-    font-family:'wire one', serif;
+    font-size:30px;
+    /* font-family:'wire one', serif; */
     font-weight:bolder; 
 }
 
@@ -200,8 +200,8 @@ footer p{
 }
 .green-block h2{
     text-align:center;
-    font-size:55px;
-    font-family:'wire one', serif;
+    font-size:40px;
+    /* font-family:'wire one', serif; */
     font-weight:bolder;
     text-decoration: overline underline;
     text-decoration-color: #1A5D1A;
@@ -273,10 +273,10 @@ footer p{
     justify-content: center ;
 
     /* espacios entre filas y columnas */
-    row-gap: 25px;
-    column-gap: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    row-gap: 5%;
+    column-gap: 5%;
+    padding-top: 8%;
+    padding-bottom: 10%;
 }
 .grid-nosotros-contenedor img{
     width: 100%;
@@ -339,7 +339,7 @@ footer p{
     /* espacios entre filas y columnas */
     row-gap: 100px;
     column-gap: 15px;
-    padding-top: 45px;
+    padding-top: 10%;
     padding-bottom: 15px;
 }
 .grid-servicios-contenedor img{
@@ -411,7 +411,7 @@ footer p{
     display: flex;
     padding-left: 0.5%;
     padding-right: 0.5%;
-    
+    margin-top: 80px;
 }
 .separador{
     display: none;
@@ -475,11 +475,12 @@ footer p{
     text-align: center;
     background:rgba(235, 235, 240, 0.801);
     width: 90%;
-    height: 500px;
-    padding: 20px;
+    height: 490px;
+    padding: 10px;
+    margin: 10px;
     z-index: 1;
     position:absolute;
-    top: 55%;
+    top: 50%;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 }
 .texto-titulo-rse{
@@ -491,7 +492,12 @@ footer p{
 /*----------------Pagina Galeria ------------------*/
 .somos-eco{
     text-align: center;
+    margin-top: 80px;
+    
 } 
+.somos-eco p{
+    margin: 0;
+}
 .galeria-eco{
     display: flex;
     justify-content: center;
@@ -561,7 +567,7 @@ footer p{
         height: 900px;
     }
     .quienes-somos h2{
-        font-size:38px;
+        font-size:32px;
     }
     .quienes-somos p{
         font-size:18px;  
@@ -693,7 +699,7 @@ footer p{
     /*-------------RSE----------*/
     .rse-contenedor{
         flex-direction: row;
-        height: 1000px;
+        height: 950px;
         
     }
     .imagen-rse img{
@@ -704,7 +710,7 @@ footer p{
     .rse-texto-contenedor{
         width: 95%;
         height: 730px;
-        top: 25%;
+        top: 55%; 
     } 
     .texto-titulo-rse{
         font-size: 18px;
@@ -714,7 +720,7 @@ footer p{
     }
     /*----------Galeria---------*/
     .somos-eco{
-        padding-top: 80px;
+        padding-top: 20px;
       
     }
     .somos-eco hr{
@@ -722,11 +728,9 @@ footer p{
     }
     .carousel{
         padding: 50px;
-        height: 380px;
+        height: 300px;
     }
-    .carousel-inner > .carousel-item > img {
-        height: 30vh;
-    }  
+   
 }
 /*Tablet entre 481 y 978*/
 

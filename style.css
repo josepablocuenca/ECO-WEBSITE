@@ -79,7 +79,7 @@ html{
 }
 .navbar{
     display: none;
-    background-color: #D0E7D2; 
+    background-color: #cec8c8; 
     border: #79AC78 solid 2px;
 }
 
@@ -112,6 +112,7 @@ footer p{
 
 /* Definimos estilos para el banner principal */
 .grid-banner-contenedor{
+    margin-top: 70px;
     display: grid;
     grid-template-columns: 25% 75%;
     grid-template-rows: 400px;    
@@ -642,10 +643,20 @@ footer p{
         width: 99%;
         height: 160px;
         box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-        margin: 2px;
+        margin-top: 30px;
     }
     .grid-servicios-contenedor p{
         font-size: 14px;
+    }
+    .grid-texto-perfo{
+        margin-bottom: 15px;
+    }
+    .grid-texto-movimiento{
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .grid-texto-equipamiento{
+        margin-top: 20px;
     }
     /*-------------Pagina Trabaja------------*/
     .trabaja-contenedor{

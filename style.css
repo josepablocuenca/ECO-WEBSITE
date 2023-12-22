@@ -46,7 +46,8 @@ html{
 
 .menu-desktop{    
     padding: 0.6rem;
-    background-color: #D0E7D2;
+    /* background-color: #D0E7D2; */
+    background-color: #cec8c8;
     /* visualización horizontalmente los items */
     display: flex;
     /* alinea horizontalmente los items */
@@ -63,9 +64,8 @@ html{
 
 /* modificamos solo las imagenes que hayan en el header */
 .menu-desktop a{
-    margin-left: 1rem;
-    margin-right: 1rem;
-    color: #618264;
+
+    color: green;
     font-weight: bold;
     text-decoration: none; 
     font-size: 0.9rem;
@@ -74,7 +74,8 @@ html{
 .imagen-header{
     background-image: url(img/HEADER.jpg);
     width: 250px;
-    height: 56px;
+    height: 55px;
+    
 }
 .navbar{
     display: none;
@@ -87,7 +88,7 @@ html{
 footer{
     display:flex;
     align-items: center;
-    background-color: #358b33;
+    background-color: #cec8c8;
     border-radius: 5px;
     margin: 0.3%;
     border: gray solid 1px;
@@ -98,8 +99,9 @@ footer img{
     margin: 5px;
 }
 footer p{
-    color: rgb(245, 239, 239);
+    color: rgb(95, 92, 92);
     font-weight: bolder;
+    font-size: 15px;
     width: 85%;
     text-align: right;
 } 
@@ -497,6 +499,9 @@ footer p{
 } 
 .somos-eco p{
     margin: 0;
+    font-family:'Raleway', serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 .galeria-eco{
     display: flex;
@@ -510,16 +515,12 @@ footer p{
     border-radius: 5px;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.55);
 }
-/* .img-normalizada{
-	width: 400px;
-	height: 500px;
-	object-fit: cover;
-} */
 .carousel-inner > .carousel-item > img {
     object-fit:scale-down;
     height: 70vh;
     width: 100%;
     align-content: center;
+    
     
 }
  

@@ -393,6 +393,7 @@ footer p{
     display: flex;
     justify-content: center;
     padding: 2%;
+    margin-top: 40px;
     
 }
 .divisor{

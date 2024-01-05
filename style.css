@@ -596,35 +596,38 @@ footer p{
         height: 10px;
     }
     .green-block{
-        height: 900px;
+        height: 1000px;
     }
-    .quienes-somos h2{
-        font-size:32px;
+    .titulo-quienes a{
+        font-size:35px;
     }
-    .quienes-somos p{
+    .texto-quienes{
         font-size:18px;  
     } 
-    .green-block h2{
+    .texto-servicios{
         font-size:38px;   
     }
-    .green-block p{
-        font-size:20px;
+    /*-Acomodo las Cards-*/
+    .card-body{
+        margin-bottom: 0;
+    }
+    .card-title {
+        font-size:25px;
         font-family:'Raleway', serif;
         text-align: center;
-        
-    }
-    /*-Acomodo las Cards-*/
+    } 
+    .card-text{
+        display: none;
+    } 
     .row{
         margin: 0;
         justify-content: center;
     }
     .col{
         width: 330px;
-        height: 260px;       
+        height: 260px;
+        margin: 5%;       
     }
-    .card-text{
-        display: none;
-    } 
     /*-Sección Somos Eco-*/
      
     .somos-ecominera p{
@@ -819,18 +822,24 @@ footer p{
         height: 10px;
     }
     .green-block{
-        height: 1200px;
+        height: 1300px;
     }
-    .quienes-somos h2{
-        font-size:32px;
+    .titulo-quienes a{
+        font-size: 32px;
     }
-    .quienes-somos p{
+    .texto-quienes{
         font-size:18px;  
-    } 
-    .green-block h2{
+    }
+    .texto-servicios{
         font-size:38px;   
     }
-    .green-block p{
+    .row{
+        align-items: center;
+    }
+    .card-body{
+        margin-bottom: 0;
+    }
+    .card-text{
         font-size:20px;
         font-family:'Raleway', serif;
         text-align: center;

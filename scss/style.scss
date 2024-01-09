@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*
+Colores verdes 
+#618264
+#79AC78
+#B0D9B1
+#D0E7D2
+
+*/
+/* importo tipografia de google font ej: Inter Tight */
+/* font-family: 'Inter Tight', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+
+/* importo tipografia de google font ej: Rubik */
+/* font-family: 'Rubik', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&family=Rubik&display=swap');
+
+/* importo tipografia de google font ej: Noto Serif */
+/* font-family: 'Noto Serif', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&family=Noto+Serif:wght@500&family=Rubik&display=swap');
+
+
+/* 1 rem = 16px */
+
+html{
+    font-family: 'Noto Serif', serif;
+}
+/*------------- Header ---------------*/
+header{
+    .menu-desktop{
+        padding: 0.6rem;
+        background-color: #cec8c8;
+        /* visualización horizontalmente los items */
+        display: flex;
+        /* alinea horizontalmente los items */
+        justify-content: space-around;
+        /*alinea vertical los items */
+        align-items: center;
+        border-radius: 5px;
+        border:gray solid 1px;
+        /*dejamos fijo el header a medida que scrolleamos*/
+        /* position: sticky;
+        top: 0;
+        z-index: 1; */
+
+        a{
+            color: green;
+            font-weight: bold;
+            text-decoration: none; 
+            font-size: 0.9rem;
+            .imagen-header{
+                background-image: url(../img/HEADER.jpg);
+                width: 250px;
+                height: 55px;
+                
+                &:hover{
+                    -webkit-transform: scale(0.9);
+                    -moz-transform: scale(0.9);
+                    -o-transform: scale(0.9);
+                    -ms-transform: scale(0.9);
+                    transform: scale(0.9)
+                }
+            }
+        }
+    }
+    .navbar{
+        display: none;
+        background-color: #cec8c8; 
+        border: #79AC78 solid 2px;
+    }
+
+}
+/* -------------- Footer --------------*/
+footer{
+    display:flex;
+    align-items: center;
+    background-color: #cec8c8;
+    border-radius: 5px;
+    margin: 0.3%;
+    border: gray solid 1px;
+    padding: 0.4rem;
+
+    img{
+        width: 28px; 
+        margin: 5px;
+    }
+    p{
+        color: rgb(95, 92, 92);
+        font-weight: bolder;
+        font-size: 15px;
+        width: 85%;
+        text-align: right;
+    } 
+}
+
+@import "index.scss";

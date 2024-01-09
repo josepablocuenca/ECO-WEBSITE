@@ -1,0 +1,206 @@
+@media only screen and (min-width:481px) and (max-width:978px){
+    /*--------header query--------*/
+    header{
+        .menu-desktop{
+            display: none;
+        }
+        .navbar{
+            display: block;  
+            .imagen-header{
+                /* background-image: url(img/EcoLogoCelular.png); */
+                background-image: url(../img/HEADER.jpg); 
+                width: 250px;
+                height: 55px;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }      
+        }
+    } 
+    /*-------footer query-------*/
+    footer{
+        img{
+            width: 20px; 
+            margin: 1px;
+        }
+        p{
+            font-size: 12px;
+        }
+    } 
+    /*--------Pagina Index Query---------*/
+    .grid-banner-contenedor{
+        display: block;
+    }
+    .grid-texto{
+        display: none;
+    } 
+    .separador{
+        height: 10px;
+    }
+    .quienes-somos{
+        .titulo-quienes{
+            a{
+                font-size:32px; 
+            }
+        }
+        .texto-quienes{
+            font-size:18px;  
+        }
+    }
+    .green-block{
+        height: 1300px;
+        .texto-servicios{
+            font-size:38px;   
+        }
+        .row{
+            align-items: center;
+            .card-body{
+                margin-bottom: 0;
+                .card-text{
+                    font-size:20px;
+                    font-family:'Raleway', serif;
+                    text-align: center;
+                    
+                }
+            }
+        }
+    }
+    /*-Sección Somos Eco-*/    
+    .somos-ecominera{ 
+        p{
+            font-size:18px;  
+        }   
+    }
+    /*------------Pagina Nosotros Query-----------*/
+    
+    .grid-nosotros-contenedor{
+        display: block;      
+        img{
+            width: 99%;
+            height: 200px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            margin: 2px;
+        }
+        .grid-imagen1{
+            .imagen-desktop{
+                display:none;        
+        
+            }
+            .imagen-queries{
+                display: inline;   
+            }
+        }
+        .grid-texto1, .grid-texto2, .grid-texto3{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    } 
+    /*------------Pagina Servicios Query-----------*/  
+    .grid-servicios-contenedor{
+        display: block; 
+        img{
+            width: 99%;
+            height: 190px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+        }
+        .grid-servicios-img1{
+            .img-perfo-desktop{
+                display: none;
+            }
+            .img-perfo-queries{
+                display: block;
+                margin-bottom: 0;
+            }  
+        } 
+        .grid-texto-perfo, .grid-texto-movimiento, .grid-texto-equipamiento{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }  
+    } 
+    /*-------------Pagina RSE Query----------*/
+    .rse-contenedor{
+        flex-direction: row;
+        height: 890px;
+        .imagen-rse{ 
+            img{
+                position: relative;
+                width: 100%;
+                height: 230px;
+                margin-top: 50px;
+            }
+        }  
+        .rse-texto-contenedor{
+            width: 95%;
+            height: 620px;
+            top: 85%; 
+            .texto-titulo-rse{
+                font-size: 18px;
+            }
+            .texto-rse{
+                font-size: 14px;
+            }
+        }   
+    } 
+    /*----------Pagina Galeria Query ---------*/
+    .carousel{
+        padding: 50px;
+        height: 300px;
+    } 
+    /*----------Pagina Trabaja Query ----------*/
+    .trabaja-contenedor{
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 20px;
+        .imagen-contenedor{
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            .imagen-trabaja{
+                height: 250px;
+                background-size:cover;
+                background-position-y: top;
+        
+            }
+        }
+        .separador{
+            display: block;
+            height: 15px;
+    
+        }
+        .form-contenedor{
+            position: relative;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 380px;
+        }
+    }
+    /*------------Pagina Contactanos Query----------*/
+    .donde-estamos-contenedor{
+        flex-direction: column-reverse;
+        margin-top: 60px;
+        .divisor{
+            border-left: 0;
+            border-bottom: #6c6d6e solid 3px;
+            padding-left: 0;
+            margin-left: 0;
+            margin-bottom: 5%;
+        } 
+        .gmap_canvas{
+            width: 550px;
+            height: 150px;
+            position: relative;
+            z-index: -1;
+            align-items: center;
+            left: 25px;
+        }
+        .donde-estamos{
+            font-size: 95%;
+            p{
+                font-size: 20px;
+                padding: 0;
+                margin: 0;
+            }
+        } 
+    }    
+    
+}    

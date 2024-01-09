@@ -1,0 +1,219 @@
+/* Celulares menos de 500px */
+$texto-servicios:17px;
+
+@media only screen and (max-width:480px){
+    /*--------header Query--------*/
+    header{
+        .menu-desktop{
+            display: none;    
+        }   
+        .navbar{
+            display: block; 
+            .imagen-header{
+                background-image: url(../img/HEADER.jpg); 
+                width: 250px;
+                height: 55px;
+                background-repeat: no-repeat;
+                object-fit: cover;
+            }                 
+        }
+    } 
+    /*-------footer Query-------*/
+    footer{
+        img{
+            width: 20px; 
+            margin: 1px;
+        }
+        p{
+        font-size: 12px;
+        }
+    }
+    /*--------Pagina Index Query---------*/
+    .grid-banner-contenedor{
+        display: block;
+    }
+    .grid-texto{
+        display: none;
+    } 
+    /*-Seccion Servicios Index-*/  
+    .separador{
+        height: 20px;
+    }
+    .quienes-somos{
+        .titulo-quienes{
+            a{
+                font-size:32px; 
+            }
+        }
+        .texto-quienes{
+            font-size:18px;  
+        } 
+    }
+    .green-block{
+        height: 1000px;
+        .row{
+            margin: 0;
+            justify-content: center;
+            .card-body{
+                margin-bottom: 0;            
+                .card-title {
+                    font-size:28px;
+                    font-family:'Raleway', serif;
+                    text-align: center;
+                    font-weight: bold;
+                } 
+                .card-text{
+                    display: none;
+                }
+            }     
+        }    
+    } 
+    /*-Sección Somos Eco-*/    
+    .somos-ecominera{ 
+        p{
+            font-size:18px;  
+        }    
+    }   
+    /*--------------Pagina Nosotros Query-----------*/
+    .grid-nosotros-contenedor{
+        display: block;          
+        img{
+            width: 99%;
+            height: 180px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            margin-top: 30px;
+        }
+        p{
+            font-size: 16px;
+            
+        }
+        .grid-imagen1{
+            .imagen-desktop{
+                display:none;        
+        
+            }
+            .imagen-queries{
+                display: inline;   
+            }
+        }
+        .grid-texto1{
+            padding-top: 20px;
+        }
+           
+        .grid-texto2{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .grid-imagen3{
+            margin-bottom: 10px;
+        } 
+    } 
+    /*-------------Pagina Servicios Query-----------*/
+    
+    .grid-servicios-contenedor{
+        display: block;
+        img{
+            width: 99%;
+            height: 160px;
+            box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+            margin-top: 30px;
+        }
+        .grid-texto-perfo{
+            margin-bottom: 15px;
+            font-size: $texto-servicios;
+        } 
+        .grid-texto-movimiento{
+            margin-top: 20px;
+            margin-bottom: 15px;
+            font-size: $texto-servicios;
+        }
+        .grid-texto-equipamiento{
+            margin-top: 20px;
+            font-size: $texto-servicios;
+        }   
+    } 
+     /*-------------Pagina Trabaja Query------------*/
+     .trabaja-contenedor{
+        flex-direction: column;
+        margin: 0;
+        margin-bottom: 20px;
+        .imagen-contenedor{
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            .imagen-trabaja{
+                height: 250px;
+                background-size:cover;
+                background-position-y: top;
+        
+            }
+        }
+        .separador{
+            display: block;
+            height: 15px;
+        }
+        .form-contenedor{
+            position: relative;
+            width: 100%;
+            top: 0;
+            left: 0;
+            height: 380px;
+        }
+        
+    } 
+    /*-------------Pagina RSE Query----------*/
+    .rse-contenedor{
+        flex-direction: row;
+        height: 950px;
+        .imagen-rse{ 
+            img{
+                position: relative;
+                width: 100%;
+                height: 230px;
+                margin-top: 30px;
+            }       
+        }
+        .rse-texto-contenedor{
+            width: 95%;
+            height: 730px;
+            top: 75%; 
+            .texto-titulo-rse{
+                font-size: 18px;
+            }
+            .texto-rse{
+                font-size: 14px;
+            }
+        }
+    }
+    /*----------Pagina Galeria Query---------*/
+    .somos-eco{
+        padding-top: 20px;
+        hr{
+            display: none;
+        }  
+    }
+    .carousel{
+        padding: 50px;
+        height: 300px;
+    }  
+    /*------------- Pagina Contactanos Query----------*/
+    .donde-estamos-contenedor{
+        flex-direction: column-reverse;
+        margin-top: 60px;
+        .divisor{
+            border-left: 0;
+            border-bottom: #6c6d6e solid 3px;
+            padding-left: 0;
+            margin-left: 0;
+            margin-bottom: 5%;
+        }
+        .donde-estamos{
+            font-size: 95%;
+            p{
+                font-size: 20px;
+                padding: 0;
+                margin: 0;
+            }
+        } 
+    }
+}

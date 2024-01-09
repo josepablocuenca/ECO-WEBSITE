@@ -1,0 +1,28 @@
+.somos-eco{
+    text-align: center;
+    margin-top: 80px;
+    p{
+        margin: 0;
+        font-family:'Raleway', serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+} 
+.galeria-eco{
+    display: flex;
+    justify-content: center;
+    .carousel{
+        margin: 8px;
+        padding: 50px;
+        width: 800px;
+        background:rgba(220, 220, 226, 0.801);
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.55);
+        .carousel-inner > .carousel-item > img {
+            object-fit:scale-down;
+            height: 70vh;
+            width: 100%;
+            align-content: center;    
+        }
+    }
+}

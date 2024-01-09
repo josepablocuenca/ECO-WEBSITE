@@ -1,0 +1,64 @@
+.grid-nosotros-contenedor{
+    display:grid;
+     /* definir áreas */
+    grid-template-areas: 
+    "foto1 texto1 texto1"
+    "foto1 foto2 foto2"
+    "texto2 foto3 texto3";
+
+    /* ancho de cada columna */
+    grid-template-columns: 28% 33% 30%;
+    /* alto de cada fila */
+    grid-template-rows: 250px 180px 300px ;
+
+    /* acomodar a los hijos */
+    justify-items: center;
+    align-items: center;
+
+    /* acomodar grilla */
+    justify-content: center ;
+
+    /* espacios entre filas y columnas */
+    row-gap: 5%;
+    column-gap: 3%;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    
+    }
+    p{
+        text-align: justify;
+        margin: 0 25px;
+        color: #6c6d6e;
+        font-size: 20px;
+    }
+    .grid-imagen1{   
+        grid-area: foto1;   
+        /*Anulo imagen que visualiza en el query*/
+        .imagen-queries{
+            display: none;
+        }
+    }
+    
+    .grid-texto1{
+        grid-area: texto1;
+    }
+    .grid-imagen2{
+        grid-area: foto2;
+    
+    }
+    .grid-texto2{
+        grid-area: texto2;
+    }
+    .grid-imagen3{
+        grid-area: foto3;
+        
+    }
+    .grid-texto3{
+        grid-area: texto3;
+    }
+}

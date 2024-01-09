@@ -1,0 +1,22 @@
+.donde-estamos-contenedor{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    margin-top: 40px;
+    .divisor{
+        border-left: grey solid 3px;
+        padding-left: 5%;
+        margin-left: 5%;
+        .donde-estamos{
+            margin: 3%;
+            padding-left: 5%;
+            padding-bottom: 5%;
+            font-size: 130%;
+            color: #393b39;
+            h1{
+                margin-bottom: 8%;
+                margin-top: 4%;
+            }
+        }
+    }
+}

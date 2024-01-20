@@ -480,9 +480,13 @@ footer p {
 .trabaja-contenedor .form-contenedor .trabaja-form li {
   list-style-type: none;
 }
-.trabaja-contenedor .form-contenedor .trabaja-form p {
+.trabaja-contenedor .form-contenedor .trabaja-form li p {
   padding: 0;
   margin: 0;
+}
+.trabaja-contenedor .form-contenedor .trabaja-form li p input {
+  width: 60%;
+  height: 35px;
 }
 
 /* Celulares menos de 500px */
@@ -631,7 +635,7 @@ footer p {
   /*-------------Pagina RSE Query----------*/
   .rse-contenedor {
     flex-direction: row;
-    height: 950px;
+    height: 1030px;
   }
   .rse-contenedor .imagen-rse img {
     position: relative;
@@ -642,7 +646,7 @@ footer p {
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
     height: 730px;
-    top: 75%;
+    top: 65%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
     font-size: 18px;
@@ -658,8 +662,7 @@ footer p {
     display: none;
   }
   .carousel {
-    padding: 50px;
-    height: 300px;
+    height: 380px;
   }
   /*------------- Pagina Contactanos Query----------*/
   .donde-estamos-contenedor {
@@ -677,7 +680,7 @@ footer p {
     font-size: 95%;
   }
   .donde-estamos-contenedor .donde-estamos p {
-    font-size: 20px;
+    font-size: 17px;
     padding: 0;
     margin: 0;
   }

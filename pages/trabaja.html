@@ -71,26 +71,32 @@
             <div class="form-contenedor">
                 <div class="pregunta-form">
                   <h1>Querés trabajar con nosotros?</h1>
-                  <p>Completa con tus datos y envialo!</p>
+                  <h2 style="color:darkslategrey;">Completa con tus datos y envialo!</h2>
                 </div>
                 <div class="trabaja-form">
-                  <form action="/my-handling-form-page" method="post">
+                  <form action="mailto:trabajaconnosotros@ecominera.com.ar" method="post">
                       <ul>
                           <li>
                             <p><label for="nombre">Nombre:</label></p>
                             <p><input type="text" id="nombre" name="user_name" /></p>          
                           </li>
                           <li>
-                             <p> <label for="apellido">Apellido:</label></p>
-                              <p><input type="text" id="apellido" name="user_name" /> </p>
+                            <p><label for="apellido">Apellido:</label></p>
+                            <p><input type="text" id="apellido" name="user_name" /> </p>
                           </li>
                           <li>
                               <p><label for="mail">E-mail:</label></p>
                               <p><input type="email" id="mail" name="user_mail" /> </p>
                           </li>
                           <li>
-                              <p><label for="msg">Mensaje:</label></p>
-                              <p><textarea id="msg" name="user_message"></textarea></p>
+                              <p><label for="msg">Subí tu CV:</label></p>
+                              <p><input type="file" name="archivosubido" accept=".pdf"></p>
+                          </li>
+                          <li>
+                            
+                            <p><button type="submit">Enviar!</button>
+                              <!-- <input class="btn btn-primary" type="submit" value="Submit"> -->
+                            </p>
                           </li>
                       </ul>
                     </form>

@@ -104,9 +104,10 @@ $texto-servicios:17px;
             padding-top: 20px;
             padding-bottom: 20px;
         }
-        .grid-imagen3{
-            margin-bottom: 10px;
-        } 
+        // .grid-imagen3{
+        //     // margin-bottom: 5px;
+        // }
+
     } 
     /*-------------Pagina Servicios Query-----------*/
     
@@ -118,7 +119,18 @@ $texto-servicios:17px;
             box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
             margin-top: 30px;
         }
+        .grid-servicios-img1{
+            padding-bottom: 3%;
+            .img-perfo-desktop{
+                display: none;
+                margin-bottom: 0;
+            }
+            .img-perfo-queries{
+                display: block;
+            }  
+        }
         .grid-texto-perfo{
+            margin-top: 0;
             margin-bottom: 15px;
             font-size: $texto-servicios;
         } 
@@ -164,7 +176,7 @@ $texto-servicios:17px;
     /*-------------Pagina RSE Query----------*/
     .rse-contenedor{
         flex-direction: row;
-        height: 1030px;
+        height: 980px;
         .imagen-rse{ 
             img{
                 position: relative;
@@ -176,7 +188,7 @@ $texto-servicios:17px;
         .rse-texto-contenedor{
             width: 95%;
             height: 730px;
-            top: 65%; 
+            top: 45%; 
             .texto-titulo-rse{
                 font-size: 18px;
             }
@@ -187,14 +199,26 @@ $texto-servicios:17px;
     }
     /*----------Pagina Galeria Query---------*/
     .somos-eco{
-        padding-top: 20px;
-        hr{
-            display: none;
+        padding-top: 5px;
+        padding-bottom: 10px;
+        // hr{
+        //     display: none;
+        // }  
+        .titulo-galeria{
+            font-weight: bolder;
+            font-size: 20px;
+        } 
+        .texto-galeria{
+            font-size: 18px;
+        }   
+    }
+    .galeria-eco{
+        margin-bottom: 10px;
+        .carousel{
+            height: 300px;
         }  
     }
-    .carousel{
-        height: 380px;
-    }  
+    
     /*------------- Pagina Contactanos Query----------*/
     .donde-estamos-contenedor{
         flex-direction: column-reverse;

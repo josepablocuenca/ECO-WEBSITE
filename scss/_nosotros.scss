@@ -21,8 +21,9 @@
     /* espacios entre filas y columnas */
     row-gap: 5%;
     column-gap: 3%;
-    padding-top: 8%;
-    padding-bottom: 10%;
+    padding-top:4%;
+    padding-bottom: 5%;
+    
     img{
         width: 100%;
         height: 100%;
@@ -46,6 +47,7 @@
     
     .grid-texto1{
         grid-area: texto1;
+        
     }
     .grid-imagen2{
         grid-area: foto2;
@@ -53,6 +55,7 @@
     }
     .grid-texto2{
         grid-area: texto2;
+        padding-top: 10%;
     }
     .grid-imagen3{
         grid-area: foto3;
@@ -60,5 +63,6 @@
     }
     .grid-texto3{
         grid-area: texto3;
+        padding-top: 10%;
     }
 }

@@ -1,29 +1,37 @@
 .rse-contenedor{
     display: flex;
     flex-wrap: wrap;
-    height: 820px;
+    height: 960px;
     justify-content: center;
     .imagen-rse{
-        margin-right: 1.4%;
+        // margin-right: 1.4%;
+        display: flex;
+        flex-direction: column;   
+        text-align: center;
+        width: 90%;
         position: absolute;
+       
     }
     .rse-texto-contenedor{
         display: flex;
         flex-direction: column;   
         text-align: center;
         background:rgba(235, 235, 240, 0.801);
-        width: 90%;
+        width: 95%;
         height: 490px;
         padding: 10px;
         margin: 10px;
         z-index: 1;
         position:absolute;
-        top: 50%;
+        top: 45%;
         box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
         .texto-titulo-rse{
-            font-size: 25px;
+            font-size: 30px;
             color: green;
             font-weight: bolder;
+        }
+        .texto-rse{
+            font-size: 18px;
         }
     }
 }

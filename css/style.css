@@ -280,8 +280,8 @@ footer p {
   /* espacios entre filas y columnas */
   row-gap: 5%;
   column-gap: 3%;
-  padding-top: 8%;
-  padding-bottom: 10%;
+  padding-top: 4%;
+  padding-bottom: 5%;
 }
 .grid-nosotros-contenedor img {
   width: 100%;
@@ -310,16 +310,19 @@ footer p {
 }
 .grid-nosotros-contenedor .grid-texto2 {
   grid-area: texto2;
+  padding-top: 10%;
 }
 .grid-nosotros-contenedor .grid-imagen3 {
   grid-area: foto3;
 }
 .grid-nosotros-contenedor .grid-texto3 {
   grid-area: texto3;
+  padding-top: 10%;
 }
 
 .grid-servicios-contenedor {
   display: grid;
+  height: 1150px;
   /* definir áreas */
   grid-template-areas: "img1 parrafo1 parrafo1" "parrafo2 parrafo2 img2" "img3 parrafo3 parrafo3";
   /* ancho de cada columna */
@@ -332,10 +335,11 @@ footer p {
   /* acomodar grilla */
   justify-content: center;
   /* espacios entre filas y columnas */
-  row-gap: 80px;
+  row-gap: 5%;
   column-gap: 15px;
   padding-top: 10%;
   padding-bottom: 2%;
+  height: 100%;
 }
 .grid-servicios-contenedor img {
   width: 100%;
@@ -345,6 +349,7 @@ footer p {
 }
 .grid-servicios-contenedor .grid-servicios-img1 {
   grid-area: img1;
+  padding-bottom: 20%;
 }
 .grid-servicios-contenedor .grid-servicios-img1 .img-perfo-queries {
   display: none;
@@ -352,8 +357,8 @@ footer p {
 .grid-servicios-contenedor .grid-texto-perfo {
   grid-area: parrafo1;
   text-align: justify;
-  padding-top: 30px;
-  margin: 0 25px;
+  padding-top: 0;
+  margin: 0 15px;
   color: #6c6d6e;
   font-size: 18px;
 }
@@ -363,7 +368,7 @@ footer p {
 .grid-servicios-contenedor .grid-texto-movimiento {
   grid-area: parrafo2;
   text-align: justify;
-  margin: 0 25px;
+  margin: 0 15px;
   color: #6c6d6e;
   font-size: 18px;
 }
@@ -381,11 +386,14 @@ footer p {
 .rse-contenedor {
   display: flex;
   flex-wrap: wrap;
-  height: 820px;
+  height: 960px;
   justify-content: center;
 }
 .rse-contenedor .imagen-rse {
-  margin-right: 1.4%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 90%;
   position: absolute;
 }
 .rse-contenedor .rse-texto-contenedor {
@@ -393,30 +401,37 @@ footer p {
   flex-direction: column;
   text-align: center;
   background: rgba(235, 235, 240, 0.801);
-  width: 90%;
+  width: 95%;
   height: 490px;
   padding: 10px;
   margin: 10px;
   z-index: 1;
   position: absolute;
-  top: 50%;
+  top: 45%;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
-  font-size: 25px;
+  font-size: 30px;
   color: green;
   font-weight: bolder;
+}
+.rse-contenedor .rse-texto-contenedor .texto-rse {
+  font-size: 18px;
 }
 
 .somos-eco {
   text-align: center;
   margin-top: 80px;
 }
-.somos-eco p {
+.somos-eco .titulo-galeria {
+  color: green;
   margin: 0;
   font-family: "Raleway", serif;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
+}
+.somos-eco .texto-galeria {
+  font-size: 20px;
 }
 
 .galeria-eco {
@@ -433,7 +448,7 @@ footer p {
 }
 .galeria-eco .carousel .carousel-inner > .carousel-item > img {
   object-fit: scale-down;
-  height: 70vh;
+  height: 40vh;
   width: 100%;
   align-content: center;
 }
@@ -579,9 +594,6 @@ footer p {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  .grid-nosotros-contenedor .grid-imagen3 {
-    margin-bottom: 10px;
-  }
   /*-------------Pagina Servicios Query-----------*/
   .grid-servicios-contenedor {
     display: block;
@@ -592,7 +604,18 @@ footer p {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     margin-top: 30px;
   }
+  .grid-servicios-contenedor .grid-servicios-img1 {
+    padding-bottom: 3%;
+  }
+  .grid-servicios-contenedor .grid-servicios-img1 .img-perfo-desktop {
+    display: none;
+    margin-bottom: 0;
+  }
+  .grid-servicios-contenedor .grid-servicios-img1 .img-perfo-queries {
+    display: block;
+  }
   .grid-servicios-contenedor .grid-texto-perfo {
+    margin-top: 0;
     margin-bottom: 15px;
     font-size: 17px;
   }
@@ -635,7 +658,7 @@ footer p {
   /*-------------Pagina RSE Query----------*/
   .rse-contenedor {
     flex-direction: row;
-    height: 1030px;
+    height: 980px;
   }
   .rse-contenedor .imagen-rse img {
     position: relative;
@@ -646,7 +669,7 @@ footer p {
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
     height: 730px;
-    top: 65%;
+    top: 45%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
     font-size: 18px;
@@ -656,13 +679,21 @@ footer p {
   }
   /*----------Pagina Galeria Query---------*/
   .somos-eco {
-    padding-top: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
   }
-  .somos-eco hr {
-    display: none;
+  .somos-eco .titulo-galeria {
+    font-weight: bolder;
+    font-size: 20px;
   }
-  .carousel {
-    height: 380px;
+  .somos-eco .texto-galeria {
+    font-size: 18px;
+  }
+  .galeria-eco {
+    margin-bottom: 10px;
+  }
+  .galeria-eco .carousel {
+    height: 300px;
   }
   /*------------- Pagina Contactanos Query----------*/
   .donde-estamos-contenedor {
@@ -726,7 +757,7 @@ footer p {
     font-size: 18px;
   }
   .green-block {
-    height: 1300px;
+    height: 1340px;
   }
   .green-block .texto-servicios {
     font-size: 38px;
@@ -775,6 +806,9 @@ footer p {
     height: 190px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
   }
+  .grid-servicios-contenedor .grid-servicios-img1 {
+    padding-bottom: 3%;
+  }
   .grid-servicios-contenedor .grid-servicios-img1 .img-perfo-desktop {
     display: none;
   }
@@ -789,7 +823,7 @@ footer p {
   /*-------------Pagina RSE Query----------*/
   .rse-contenedor {
     flex-direction: row;
-    height: 890px;
+    height: 930px;
   }
   .rse-contenedor .imagen-rse img {
     position: relative;
@@ -799,8 +833,8 @@ footer p {
   }
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
-    height: 620px;
-    top: 85%;
+    height: 680px;
+    top: 45%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
     font-size: 18px;
@@ -842,6 +876,7 @@ footer p {
   }
   /*------------Pagina Contactanos Query----------*/
   .donde-estamos-contenedor {
+    display: flex;
     flex-direction: column-reverse;
     margin-top: 60px;
   }
@@ -851,14 +886,6 @@ footer p {
     padding-left: 0;
     margin-left: 0;
     margin-bottom: 5%;
-  }
-  .donde-estamos-contenedor .gmap_canvas {
-    width: 550px;
-    height: 150px;
-    position: relative;
-    z-index: -1;
-    align-items: center;
-    left: 25px;
   }
   .donde-estamos-contenedor .donde-estamos {
     font-size: 95%;

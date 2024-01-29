@@ -47,7 +47,7 @@
         }
     }
     .green-block{
-        height: 1300px;
+        height: 1340px;
         .texto-servicios{
             font-size:38px;   
         }
@@ -103,6 +103,7 @@
             box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
         }
         .grid-servicios-img1{
+            padding-bottom: 3%;
             .img-perfo-desktop{
                 display: none;
             }
@@ -119,7 +120,7 @@
     /*-------------Pagina RSE Query----------*/
     .rse-contenedor{
         flex-direction: row;
-        height: 890px;
+        height: 930px;
         .imagen-rse{ 
             img{
                 position: relative;
@@ -130,8 +131,8 @@
         }  
         .rse-texto-contenedor{
             width: 95%;
-            height: 620px;
-            top: 85%; 
+            height: 680px;
+            top: 45%; 
             .texto-titulo-rse{
                 font-size: 18px;
             }
@@ -176,6 +177,7 @@
     }
     /*------------Pagina Contactanos Query----------*/
     .donde-estamos-contenedor{
+        display: flex;
         flex-direction: column-reverse;
         margin-top: 60px;
         .divisor{
@@ -185,14 +187,6 @@
             margin-left: 0;
             margin-bottom: 5%;
         } 
-        .gmap_canvas{
-            width: 550px;
-            height: 150px;
-            position: relative;
-            z-index: -1;
-            align-items: center;
-            left: 25px;
-        }
         .donde-estamos{
             font-size: 95%;
             p{

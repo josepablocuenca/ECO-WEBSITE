@@ -1,7 +1,22 @@
+.titulos-principales{
+    h1{ 
+        display: flex;
+        justify-content: center;
+        padding-top: 90px;
+        color: rgb(30, 107, 30);
+    }
+    .separador {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 0;
+        height: 10px;
+        background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);  
+     }
+}
 .rse-contenedor{
     display: flex;
     flex-wrap: wrap;
-    height: 960px;
+    height: 1090px;
     justify-content: center;
     .imagen-rse{
         // margin-right: 1.4%;
@@ -18,12 +33,12 @@
         text-align: center;
         background:rgba(235, 235, 240, 0.801);
         width: 95%;
-        height: 490px;
+        height: 650px;
         padding: 10px;
         margin: 10px;
         z-index: 1;
         position:absolute;
-        top: 45%;
+        top: 60%;
         box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
         .texto-titulo-rse{
             font-size: 30px;

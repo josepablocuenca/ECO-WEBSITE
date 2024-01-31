@@ -1,5 +1,22 @@
+.titulos-principales{
+    h1{ 
+        display: flex;
+        justify-content: center;
+        padding-top: 90px;
+        color: rgb(30, 107, 30);
+    }
+    .separador {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 0;
+        height: 10px;
+        background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);  
+     }
+}
+
 .grid-nosotros-contenedor{
     display:grid;
+    align-content: space-evenly;
      /* definir áreas */
     grid-template-areas: 
     "foto1 texto1 texto1"
@@ -7,20 +24,16 @@
     "texto2 foto3 texto3";
 
     /* ancho de cada columna */
-    grid-template-columns: 28% 33% 30%;
+    grid-template-columns: 30% 33% 30%;
     /* alto de cada fila */
-    grid-template-rows: 250px 180px 300px ;
-
-    /* acomodar a los hijos */
-    justify-items: center;
-    align-items: center;
+    grid-template-rows: 300px 250px 320px ;
 
     /* acomodar grilla */
     justify-content: center ;
 
     /* espacios entre filas y columnas */
-    row-gap: 5%;
-    column-gap: 3%;
+    row-gap: 3%;
+    column-gap: 1%;
     padding-top:4%;
     padding-bottom: 5%;
     
@@ -38,7 +51,11 @@
         font-size: 20px;
     }
     .grid-imagen1{   
-        grid-area: foto1;   
+        grid-area: foto1;  
+        .imagen-desktop{
+            display:contents;   
+            
+        }    
         /*Anulo imagen que visualiza en el query*/
         .imagen-queries{
             display: none;

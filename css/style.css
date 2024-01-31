@@ -151,7 +151,7 @@ footer p {
 .quienes-somos .titulo-quienes a {
   text-decoration: none;
   color: #4d4a4a;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bolder;
 }
 .quienes-somos .titulo-quienes:hover {
@@ -184,9 +184,8 @@ footer p {
 }
 .green-block .texto-servicios {
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: bolder;
-  text-decoration: overline underline;
   text-decoration-color: #1A5D1A;
   text-decoration-thickness: 4px;
   text-underline-offset: 8px;
@@ -231,7 +230,8 @@ footer p {
   text-align: center;
 }
 .somos-ecominera img {
-  width: 210px;
+  width: 240px;
+  height: 160px;
   margin-bottom: 2%;
 }
 .somos-ecominera p {
@@ -264,22 +264,34 @@ footer p {
   margin-top: 4%;
 }
 
+.titulos-principales h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  color: rgb(30, 107, 30);
+}
+.titulos-principales .separador {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);
+}
+
 .grid-nosotros-contenedor {
   display: grid;
+  align-content: space-evenly;
   /* definir áreas */
   grid-template-areas: "foto1 texto1 texto1" "foto1 foto2 foto2" "texto2 foto3 texto3";
   /* ancho de cada columna */
-  grid-template-columns: 28% 33% 30%;
+  grid-template-columns: 30% 33% 30%;
   /* alto de cada fila */
-  grid-template-rows: 250px 180px 300px;
-  /* acomodar a los hijos */
-  justify-items: center;
-  align-items: center;
+  grid-template-rows: 300px 250px 320px;
   /* acomodar grilla */
   justify-content: center;
   /* espacios entre filas y columnas */
-  row-gap: 5%;
-  column-gap: 3%;
+  row-gap: 3%;
+  column-gap: 1%;
   padding-top: 4%;
   padding-bottom: 5%;
 }
@@ -298,6 +310,9 @@ footer p {
 .grid-nosotros-contenedor .grid-imagen1 {
   grid-area: foto1;
   /*Anulo imagen que visualiza en el query*/
+}
+.grid-nosotros-contenedor .grid-imagen1 .imagen-desktop {
+  display: contents;
 }
 .grid-nosotros-contenedor .grid-imagen1 .imagen-queries {
   display: none;
@@ -320,26 +335,37 @@ footer p {
   padding-top: 10%;
 }
 
+.titulos-principales h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  color: rgb(30, 107, 30);
+}
+.titulos-principales .separador {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);
+}
+
 .grid-servicios-contenedor {
   display: grid;
-  height: 1150px;
+  align-content: space-evenly;
   /* definir áreas */
   grid-template-areas: "img1 parrafo1 parrafo1" "parrafo2 parrafo2 img2" "img3 parrafo3 parrafo3";
   /* ancho de cada columna */
   grid-template-columns: 35% 25% 35%;
   /* alto de cada fila */
-  grid-template-rows: 280px 280px 280px;
+  grid-template-rows: 350px 330px 330px;
   /* acomodar a los hijos */
-  justify-items: center;
-  align-items: center;
   /* acomodar grilla */
   justify-content: center;
   /* espacios entre filas y columnas */
-  row-gap: 5%;
-  column-gap: 15px;
-  padding-top: 10%;
-  padding-bottom: 2%;
-  height: 100%;
+  row-gap: 3%;
+  column-gap: 2%;
+  padding-top: 3%;
+  padding-bottom: 4%;
 }
 .grid-servicios-contenedor img {
   width: 100%;
@@ -349,7 +375,9 @@ footer p {
 }
 .grid-servicios-contenedor .grid-servicios-img1 {
   grid-area: img1;
-  padding-bottom: 20%;
+}
+.grid-servicios-contenedor .grid-servicios-img1 .img-perfo-desktop {
+  display: inline;
 }
 .grid-servicios-contenedor .grid-servicios-img1 .img-perfo-queries {
   display: none;
@@ -357,7 +385,6 @@ footer p {
 .grid-servicios-contenedor .grid-texto-perfo {
   grid-area: parrafo1;
   text-align: justify;
-  padding-top: 0;
   margin: 0 15px;
   color: #6c6d6e;
   font-size: 18px;
@@ -383,10 +410,24 @@ footer p {
   font-size: 18px;
 }
 
+.titulos-principales h1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  color: rgb(30, 107, 30);
+}
+.titulos-principales .separador {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);
+}
+
 .rse-contenedor {
   display: flex;
   flex-wrap: wrap;
-  height: 960px;
+  height: 1090px;
   justify-content: center;
 }
 .rse-contenedor .imagen-rse {
@@ -402,12 +443,12 @@ footer p {
   text-align: center;
   background: rgba(235, 235, 240, 0.801);
   width: 95%;
-  height: 490px;
+  height: 650px;
   padding: 10px;
   margin: 10px;
   z-index: 1;
   position: absolute;
-  top: 45%;
+  top: 60%;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
 }
 .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
@@ -419,19 +460,23 @@ footer p {
   font-size: 18px;
 }
 
-.somos-eco {
+.titulos-principales {
   text-align: center;
-  margin-top: 80px;
 }
-.somos-eco .titulo-galeria {
-  color: green;
-  margin: 0;
-  font-family: "Raleway", serif;
-  font-size: 25px;
-  font-weight: bold;
+.titulos-principales h1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(30, 107, 30);
 }
-.somos-eco .texto-galeria {
+.titulos-principales .texto-galeria {
   font-size: 20px;
+}
+.titulos-principales .separador {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 0;
+  height: 10px;
+  background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);
 }
 
 .galeria-eco {
@@ -441,14 +486,14 @@ footer p {
 .galeria-eco .carousel {
   margin: 8px;
   padding: 50px;
-  width: 800px;
-  background: rgba(220, 220, 226, 0.801);
+  width: 1000px;
+  background: rgba(178, 255, 167, 0.801);
   border-radius: 5px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.55);
 }
 .galeria-eco .carousel .carousel-inner > .carousel-item > img {
-  object-fit: scale-down;
-  height: 40vh;
+  object-fit: cover;
+  height: 60vh;
   width: 100%;
   align-content: center;
 }
@@ -467,7 +512,7 @@ footer p {
 .trabaja-contenedor .imagen-contenedor .imagen-trabaja {
   background-image: url(../img/manos.jpg);
   width: 100%;
-  height: 430px;
+  height: 530px;
   border-radius: 10px;
   background-position: center;
   /* background-size: cover; */
@@ -483,7 +528,7 @@ footer p {
   padding-top: 1%;
   padding-bottom: 1%;
   padding-right: 1%;
-  height: 400px;
+  height: 500px;
   position: absolute;
   left: 45%;
   top: 3%;
@@ -576,7 +621,7 @@ footer p {
     width: 99%;
     height: 180px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    margin-top: 30px;
+    margin-top: 5px;
   }
   .grid-nosotros-contenedor p {
     font-size: 16px;
@@ -602,7 +647,7 @@ footer p {
     width: 99%;
     height: 160px;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    margin-top: 30px;
+    margin-top: 0px;
   }
   .grid-servicios-contenedor .grid-servicios-img1 {
     padding-bottom: 3%;
@@ -637,7 +682,7 @@ footer p {
   .trabaja-contenedor .imagen-contenedor {
     display: block;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 70px;
   }
   .trabaja-contenedor .imagen-contenedor .imagen-trabaja {
     height: 250px;
@@ -647,6 +692,7 @@ footer p {
   .trabaja-contenedor .separador {
     display: block;
     height: 15px;
+    margin-top: 15px;
   }
   .trabaja-contenedor .form-contenedor {
     position: relative;
@@ -656,20 +702,23 @@ footer p {
     height: 380px;
   }
   /*-------------Pagina RSE Query----------*/
+  .titulos-principales h1 {
+    font-size: 22px;
+  }
   .rse-contenedor {
     flex-direction: row;
-    height: 980px;
+    height: 1200px;
   }
   .rse-contenedor .imagen-rse img {
     position: relative;
     width: 100%;
     height: 230px;
-    margin-top: 30px;
+    margin-top: 15px;
   }
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
-    height: 730px;
-    top: 45%;
+    height: 970px;
+    top: 40%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
     font-size: 18px;
@@ -687,13 +736,16 @@ footer p {
     font-size: 20px;
   }
   .somos-eco .texto-galeria {
-    font-size: 18px;
+    font-size: 16px;
   }
   .galeria-eco {
     margin-bottom: 10px;
   }
   .galeria-eco .carousel {
-    height: 300px;
+    height: 500px;
+  }
+  .galeria-eco .carousel .carousel-inner > .carousel-item > img {
+    height: 36vh;
   }
   /*------------- Pagina Contactanos Query----------*/
   .donde-estamos-contenedor {
@@ -774,6 +826,10 @@ footer p {
     text-align: center;
   }
   /*-Sección Somos Eco-*/
+  .somos-ecominera img {
+    width: 180px;
+    height: 120px;
+  }
   .somos-ecominera p {
     font-size: 18px;
   }
@@ -817,23 +873,23 @@ footer p {
     margin-bottom: 0;
   }
   .grid-servicios-contenedor .grid-texto-perfo, .grid-servicios-contenedor .grid-texto-movimiento, .grid-servicios-contenedor .grid-texto-equipamiento {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   /*-------------Pagina RSE Query----------*/
   .rse-contenedor {
     flex-direction: row;
-    height: 930px;
+    height: 1190px;
   }
   .rse-contenedor .imagen-rse img {
     position: relative;
     width: 100%;
     height: 230px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
-    height: 680px;
+    height: 960px;
     top: 45%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
@@ -845,7 +901,7 @@ footer p {
   /*----------Pagina Galeria Query ---------*/
   .carousel {
     padding: 50px;
-    height: 300px;
+    height: 640px;
   }
   /*----------Pagina Trabaja Query ----------*/
   .trabaja-contenedor {
@@ -856,7 +912,7 @@ footer p {
   .trabaja-contenedor .imagen-contenedor {
     display: block;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 80px;
   }
   .trabaja-contenedor .imagen-contenedor .imagen-trabaja {
     height: 250px;
@@ -865,6 +921,7 @@ footer p {
   }
   .trabaja-contenedor .separador {
     display: block;
+    margin-top: 20px;
     height: 15px;
   }
   .trabaja-contenedor .form-contenedor {

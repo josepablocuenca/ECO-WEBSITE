@@ -93,10 +93,30 @@
                 display: inline;   
             }
         }
-        .grid-texto1, .grid-texto2, .grid-texto3{
+        .grid-texto1{
+            padding-top: 20px;
+            padding-bottom: 2%;
+            .titulo-quienes-somos{
+                font-size: 20px;
+            }
+            
+        }    
+
+        .grid-texto2{
             padding-top: 20px;
             padding-bottom: 20px;
+            .titulo-nuestra-mision{
+                font-size: 20px;
+            }
         }
+        .grid-texto3{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            .titulo-nuestra-vision{
+                font-size: 20px;
+            }
+        }    
+
     } 
     /*------------Pagina Servicios Query-----------*/  
     .grid-servicios-contenedor{
@@ -116,10 +136,41 @@
                 margin-bottom: 0;
             }  
         } 
-        .grid-texto-perfo, .grid-texto-movimiento, .grid-texto-equipamiento{
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }  
+        .grid-texto-perfo{
+            padding: 2%;
+            margin-top: 0;
+            margin-bottom: 15px;
+            .titulo-servicio-perforaciones{
+                font-size: 21px;
+            }
+            .texto-servicio-perforaciones{
+                font-size: $texto-servicios;
+            }
+        } 
+        .grid-texto-movimiento{
+            padding: 2%;
+            margin-top: 0;
+            margin-bottom: 15px;
+            .titulo-servicio-movimiento{
+                font-size: 21px;
+                margin: 0;
+            }
+            .texto-servicio-movimiento{
+                font-size: $texto-servicios;
+                margin: 0;
+            }
+        }
+        .grid-texto-equipamiento{
+            padding: 2%;
+            margin-top: 0;
+            margin-bottom: 15px;
+            .titulo-servicio-equipamiento{
+                font-size: 21px;
+            }
+            .texto-servicio-equipamiento{
+                font-size: $texto-servicios;
+            }
+        }   
     } 
     /*-------------Pagina RSE Query----------*/
     .rse-contenedor{
@@ -136,7 +187,7 @@
         .rse-texto-contenedor{
             width: 95%;
             height: 960px;
-            top: 45%; 
+            top: 65%; 
             .texto-titulo-rse{
                 font-size: 18px;
             }
@@ -146,10 +197,22 @@
         }   
     } 
     /*----------Pagina Galeria Query ---------*/
-    .carousel{
-        padding: 50px;
-        height: 640px;
-    } 
+
+    .titulos-principales{
+        .texto-galeria{
+            font-size: 16px;
+        }  
+    }
+    .galeria-eco{
+        margin-bottom: 10px;
+        .carousel{
+            height: 400px;
+            .carousel-inner > .carousel-item > img {
+                height: 50vh;
+  
+            }
+        }  
+    }
     /*----------Pagina Trabaja Query ----------*/
     .trabaja-contenedor{
         flex-direction: column;

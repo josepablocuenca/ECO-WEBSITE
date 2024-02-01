@@ -623,10 +623,10 @@ footer p {
     height: 20px;
   }
   .quienes-somos .titulo-quienes a {
-    font-size: 32px;
+    font-size: 30px;
   }
   .quienes-somos .texto-quienes {
-    font-size: 18px;
+    font-size: 17px;
     padding: 2%;
   }
   .green-block {
@@ -797,7 +797,7 @@ footer p {
   }
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
-    height: 1295px;
+    height: 1270px;
     top: 50%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
@@ -921,9 +921,26 @@ footer p {
   .grid-nosotros-contenedor .grid-imagen1 .imagen-queries {
     display: inline;
   }
-  .grid-nosotros-contenedor .grid-texto1, .grid-nosotros-contenedor .grid-texto2, .grid-nosotros-contenedor .grid-texto3 {
+  .grid-nosotros-contenedor .grid-texto1 {
+    padding-top: 20px;
+    padding-bottom: 2%;
+  }
+  .grid-nosotros-contenedor .grid-texto1 .titulo-quienes-somos {
+    font-size: 20px;
+  }
+  .grid-nosotros-contenedor .grid-texto2 {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .grid-nosotros-contenedor .grid-texto2 .titulo-nuestra-mision {
+    font-size: 20px;
+  }
+  .grid-nosotros-contenedor .grid-texto3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .grid-nosotros-contenedor .grid-texto3 .titulo-nuestra-vision {
+    font-size: 20px;
   }
   /*------------Pagina Servicios Query-----------*/
   .grid-servicios-contenedor {
@@ -944,9 +961,40 @@ footer p {
     display: block;
     margin-bottom: 0;
   }
-  .grid-servicios-contenedor .grid-texto-perfo, .grid-servicios-contenedor .grid-texto-movimiento, .grid-servicios-contenedor .grid-texto-equipamiento {
-    margin-top: 20px;
-    margin-bottom: 20px;
+  .grid-servicios-contenedor .grid-texto-perfo {
+    padding: 2%;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .grid-servicios-contenedor .grid-texto-perfo .titulo-servicio-perforaciones {
+    font-size: 21px;
+  }
+  .grid-servicios-contenedor .grid-texto-perfo .texto-servicio-perforaciones {
+    font-size: 16px;
+  }
+  .grid-servicios-contenedor .grid-texto-movimiento {
+    padding: 2%;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .grid-servicios-contenedor .grid-texto-movimiento .titulo-servicio-movimiento {
+    font-size: 21px;
+    margin: 0;
+  }
+  .grid-servicios-contenedor .grid-texto-movimiento .texto-servicio-movimiento {
+    font-size: 16px;
+    margin: 0;
+  }
+  .grid-servicios-contenedor .grid-texto-equipamiento {
+    padding: 2%;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .grid-servicios-contenedor .grid-texto-equipamiento .titulo-servicio-equipamiento {
+    font-size: 21px;
+  }
+  .grid-servicios-contenedor .grid-texto-equipamiento .texto-servicio-equipamiento {
+    font-size: 16px;
   }
   /*-------------Pagina RSE Query----------*/
   .rse-contenedor {
@@ -962,7 +1010,7 @@ footer p {
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
     height: 960px;
-    top: 45%;
+    top: 65%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
     font-size: 18px;
@@ -971,9 +1019,17 @@ footer p {
     font-size: 14px;
   }
   /*----------Pagina Galeria Query ---------*/
-  .carousel {
-    padding: 50px;
-    height: 640px;
+  .titulos-principales .texto-galeria {
+    font-size: 16px;
+  }
+  .galeria-eco {
+    margin-bottom: 10px;
+  }
+  .galeria-eco .carousel {
+    height: 400px;
+  }
+  .galeria-eco .carousel .carousel-inner > .carousel-item > img {
+    height: 50vh;
   }
   /*----------Pagina Trabaja Query ----------*/
   .trabaja-contenedor {

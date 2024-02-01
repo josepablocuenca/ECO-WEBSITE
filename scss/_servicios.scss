@@ -59,20 +59,34 @@
     }    
     .grid-texto-perfo{
         grid-area: parrafo1;
-        text-align: justify;
-        margin: 0 15px;
-        color: #6c6d6e;
-        font-size: 18px;
+        .titulo-servicio-perforaciones{
+            color: green;
+            font-weight: bolder; 
+            font-size: 25px;
+        }
+        .texto-servicio-perforaciones{
+            text-align: justify;
+            color: #6c6d6e;
+            font-size: 18px;
+        }    
     }
     .grid-servicios-img2{
         grid-area: img2;
     }
     .grid-texto-movimiento{
         grid-area: parrafo2;
-        text-align: justify;
-        margin: 0 15px;
-        color: #6c6d6e;
-        font-size: 18px;
+        .titulo-servicio-movimiento{
+            color: green;
+            font-weight: bolder; 
+            font-size: 25px;
+            margin: 0 25px;
+        }
+        .texto-servicio-movimiento{
+            text-align: justify;
+            color: #6c6d6e;
+            margin: 0 25px;
+            font-size: 18px;
+        }    
     }
     .grid-servicios-img3{
         grid-area: img3;
@@ -80,9 +94,15 @@
     }
     .grid-texto-equipamiento{
         grid-area: parrafo3;
-        text-align: justify;
-        margin: 0 25px;
-        color: #6c6d6e;
-        font-size: 18px;
+        .titulo-servicio-equipamiento{
+            color: green;
+            font-weight: bolder; 
+            font-size: 25px;
+        }
+        .texto-servicio-equipamiento{
+            text-align: justify;
+            color: #6c6d6e;
+            font-size: 18px;
+        }   
     }
 }

@@ -32,8 +32,8 @@
     justify-content: center ;
 
     /* espacios entre filas y columnas */
-    row-gap: 3%;
-    column-gap: 1%;
+    row-gap: 4%;
+    column-gap: 2%;
     padding-top:4%;
     padding-bottom: 5%;
     
@@ -64,6 +64,12 @@
     
     .grid-texto1{
         grid-area: texto1;
+        .titulo-quienes-somos{
+            color: green; 
+            font-weight: bolder; 
+            font-size: 25px;
+            padding-bottom: 1%;
+        }
         
     }
     .grid-imagen2{
@@ -73,6 +79,12 @@
     .grid-texto2{
         grid-area: texto2;
         padding-top: 10%;
+        .titulo-nuestra-mision{
+            color: green; 
+            font-weight: bolder;    
+            font-size: 25px;
+            padding-bottom: 1%;
+        }
     }
     .grid-imagen3{
         grid-area: foto3;
@@ -81,5 +93,11 @@
     .grid-texto3{
         grid-area: texto3;
         padding-top: 10%;
+        .titulo-nuestra-vision{
+            color: green; 
+            font-weight: bolder;    
+            font-size: 25px;
+            padding-bottom: 1%;
+        }
     }
 }

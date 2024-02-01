@@ -230,7 +230,7 @@ footer p {
   text-align: center;
 }
 .somos-ecominera img {
-  width: 240px;
+  width: 280px;
   height: 160px;
   margin-bottom: 2%;
 }
@@ -290,8 +290,8 @@ footer p {
   /* acomodar grilla */
   justify-content: center;
   /* espacios entre filas y columnas */
-  row-gap: 3%;
-  column-gap: 1%;
+  row-gap: 4%;
+  column-gap: 2%;
   padding-top: 4%;
   padding-bottom: 5%;
 }
@@ -320,6 +320,12 @@ footer p {
 .grid-nosotros-contenedor .grid-texto1 {
   grid-area: texto1;
 }
+.grid-nosotros-contenedor .grid-texto1 .titulo-quienes-somos {
+  color: green;
+  font-weight: bolder;
+  font-size: 25px;
+  padding-bottom: 1%;
+}
 .grid-nosotros-contenedor .grid-imagen2 {
   grid-area: foto2;
 }
@@ -327,12 +333,24 @@ footer p {
   grid-area: texto2;
   padding-top: 10%;
 }
+.grid-nosotros-contenedor .grid-texto2 .titulo-nuestra-mision {
+  color: green;
+  font-weight: bolder;
+  font-size: 25px;
+  padding-bottom: 1%;
+}
 .grid-nosotros-contenedor .grid-imagen3 {
   grid-area: foto3;
 }
 .grid-nosotros-contenedor .grid-texto3 {
   grid-area: texto3;
   padding-top: 10%;
+}
+.grid-nosotros-contenedor .grid-texto3 .titulo-nuestra-vision {
+  color: green;
+  font-weight: bolder;
+  font-size: 25px;
+  padding-bottom: 1%;
 }
 
 .titulos-principales h1 {
@@ -384,8 +402,14 @@ footer p {
 }
 .grid-servicios-contenedor .grid-texto-perfo {
   grid-area: parrafo1;
+}
+.grid-servicios-contenedor .grid-texto-perfo .titulo-servicio-perforaciones {
+  color: green;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.grid-servicios-contenedor .grid-texto-perfo .texto-servicio-perforaciones {
   text-align: justify;
-  margin: 0 15px;
   color: #6c6d6e;
   font-size: 18px;
 }
@@ -394,9 +418,17 @@ footer p {
 }
 .grid-servicios-contenedor .grid-texto-movimiento {
   grid-area: parrafo2;
+}
+.grid-servicios-contenedor .grid-texto-movimiento .titulo-servicio-movimiento {
+  color: green;
+  font-weight: bolder;
+  font-size: 25px;
+  margin: 0 25px;
+}
+.grid-servicios-contenedor .grid-texto-movimiento .texto-servicio-movimiento {
   text-align: justify;
-  margin: 0 15px;
   color: #6c6d6e;
+  margin: 0 25px;
   font-size: 18px;
 }
 .grid-servicios-contenedor .grid-servicios-img3 {
@@ -404,8 +436,14 @@ footer p {
 }
 .grid-servicios-contenedor .grid-texto-equipamiento {
   grid-area: parrafo3;
+}
+.grid-servicios-contenedor .grid-texto-equipamiento .titulo-servicio-equipamiento {
+  color: green;
+  font-weight: bolder;
+  font-size: 25px;
+}
+.grid-servicios-contenedor .grid-texto-equipamiento .texto-servicio-equipamiento {
   text-align: justify;
-  margin: 0 25px;
   color: #6c6d6e;
   font-size: 18px;
 }
@@ -589,9 +627,10 @@ footer p {
   }
   .quienes-somos .texto-quienes {
     font-size: 18px;
+    padding: 2%;
   }
   .green-block {
-    height: 1000px;
+    height: 1040px;
   }
   .green-block .row {
     margin: 0;
@@ -610,8 +649,14 @@ footer p {
     display: none;
   }
   /*-Sección Somos Eco-*/
+  .somos-ecominera img {
+    width: 230px;
+    height: 120px;
+    margin-bottom: 2%;
+  }
   .somos-ecominera p {
     font-size: 18px;
+    padding: 2%;
   }
   /*--------------Pagina Nosotros Query-----------*/
   .grid-nosotros-contenedor {
@@ -634,10 +679,24 @@ footer p {
   }
   .grid-nosotros-contenedor .grid-texto1 {
     padding-top: 20px;
+    padding-bottom: 2%;
+  }
+  .grid-nosotros-contenedor .grid-texto1 .titulo-quienes-somos {
+    font-size: 20px;
   }
   .grid-nosotros-contenedor .grid-texto2 {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .grid-nosotros-contenedor .grid-texto2 .titulo-nuestra-mision {
+    font-size: 20px;
+  }
+  .grid-nosotros-contenedor .grid-texto3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .grid-nosotros-contenedor .grid-texto3 .titulo-nuestra-vision {
+    font-size: 20px;
   }
   /*-------------Pagina Servicios Query-----------*/
   .grid-servicios-contenedor {
@@ -660,18 +719,39 @@ footer p {
     display: block;
   }
   .grid-servicios-contenedor .grid-texto-perfo {
+    padding: 2%;
     margin-top: 0;
     margin-bottom: 15px;
-    font-size: 17px;
+  }
+  .grid-servicios-contenedor .grid-texto-perfo .titulo-servicio-perforaciones {
+    font-size: 21px;
+  }
+  .grid-servicios-contenedor .grid-texto-perfo .texto-servicio-perforaciones {
+    font-size: 16px;
   }
   .grid-servicios-contenedor .grid-texto-movimiento {
-    margin-top: 20px;
+    padding: 2%;
+    margin-top: 0;
     margin-bottom: 15px;
-    font-size: 17px;
+  }
+  .grid-servicios-contenedor .grid-texto-movimiento .titulo-servicio-movimiento {
+    font-size: 21px;
+    margin: 0;
+  }
+  .grid-servicios-contenedor .grid-texto-movimiento .texto-servicio-movimiento {
+    font-size: 16px;
+    margin: 0;
   }
   .grid-servicios-contenedor .grid-texto-equipamiento {
-    margin-top: 20px;
-    font-size: 17px;
+    padding: 2%;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+  .grid-servicios-contenedor .grid-texto-equipamiento .titulo-servicio-equipamiento {
+    font-size: 21px;
+  }
+  .grid-servicios-contenedor .grid-texto-equipamiento .texto-servicio-equipamiento {
+    font-size: 16px;
   }
   /*-------------Pagina Trabaja Query------------*/
   .trabaja-contenedor {
@@ -699,7 +779,7 @@ footer p {
     width: 100%;
     top: 0;
     left: 0;
-    height: 380px;
+    height: 100%;
   }
   /*-------------Pagina RSE Query----------*/
   .titulos-principales h1 {
@@ -707,7 +787,7 @@ footer p {
   }
   .rse-contenedor {
     flex-direction: row;
-    height: 1200px;
+    height: 1510px;
   }
   .rse-contenedor .imagen-rse img {
     position: relative;
@@ -717,8 +797,8 @@ footer p {
   }
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
-    height: 970px;
-    top: 40%;
+    height: 1295px;
+    top: 50%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
     font-size: 18px;
@@ -727,22 +807,14 @@ footer p {
     font-size: 14px;
   }
   /*----------Pagina Galeria Query---------*/
-  .somos-eco {
-    padding-top: 5px;
-    padding-bottom: 10px;
-  }
-  .somos-eco .titulo-galeria {
-    font-weight: bolder;
-    font-size: 20px;
-  }
-  .somos-eco .texto-galeria {
+  .titulos-principales .texto-galeria {
     font-size: 16px;
   }
   .galeria-eco {
     margin-bottom: 10px;
   }
   .galeria-eco .carousel {
-    height: 500px;
+    height: 400px;
   }
   .galeria-eco .carousel .carousel-inner > .carousel-item > img {
     height: 36vh;

@@ -1,5 +1,5 @@
 /* Celulares menos de 500px */
-$texto-servicios:17px;
+$texto-servicios:16px;
 
 @media only screen and (max-width:480px){
     /*--------header Query--------*/
@@ -46,11 +46,12 @@ $texto-servicios:17px;
             }
         }
         .texto-quienes{
-            font-size:18px;  
+            font-size:18px; 
+            padding: 2%; 
         } 
     }
     .green-block{
-        height: 1000px;
+        height: 1040px;
         .row{
             margin: 0;
             justify-content: center;
@@ -70,11 +71,18 @@ $texto-servicios:17px;
     } 
     /*-Sección Somos Eco-*/    
     .somos-ecominera{ 
+        img{
+            width: 230px;
+            height: 120px;
+            margin-bottom: 2%;
+        }
         p{
-            font-size:18px;  
+            font-size:18px;
+            padding: 2%; 
         }    
     }   
     /*--------------Pagina Nosotros Query-----------*/
+       
     .grid-nosotros-contenedor{
         display: block;          
         img{
@@ -98,11 +106,26 @@ $texto-servicios:17px;
         }
         .grid-texto1{
             padding-top: 20px;
-        }
-           
+            padding-bottom: 2%;
+            .titulo-quienes-somos{
+                font-size: 20px;
+            }
+            
+        }    
+
         .grid-texto2{
             padding-top: 20px;
             padding-bottom: 20px;
+            .titulo-nuestra-mision{
+                font-size: 20px;
+            }
+        }
+        .grid-texto3{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            .titulo-nuestra-vision{
+                font-size: 20px;
+            }
         }
 
     } 
@@ -127,18 +150,39 @@ $texto-servicios:17px;
             }  
         }
         .grid-texto-perfo{
+            padding: 2%;
             margin-top: 0;
             margin-bottom: 15px;
-            font-size: $texto-servicios;
+            .titulo-servicio-perforaciones{
+                font-size: 21px;
+            }
+            .texto-servicio-perforaciones{
+                font-size: $texto-servicios;
+            }
         } 
         .grid-texto-movimiento{
-            margin-top: 20px;
+            padding: 2%;
+            margin-top: 0;
             margin-bottom: 15px;
-            font-size: $texto-servicios;
+            .titulo-servicio-movimiento{
+                font-size: 21px;
+                margin: 0;
+            }
+            .texto-servicio-movimiento{
+                font-size: $texto-servicios;
+                margin: 0;
+            }
         }
         .grid-texto-equipamiento{
-            margin-top: 20px;
-            font-size: $texto-servicios;
+            padding: 2%;
+            margin-top: 0;
+            margin-bottom: 15px;
+            .titulo-servicio-equipamiento{
+                font-size: 21px;
+            }
+            .texto-servicio-equipamiento{
+                font-size: $texto-servicios;
+            }
         }   
     } 
      /*-------------Pagina Trabaja Query------------*/
@@ -167,7 +211,7 @@ $texto-servicios:17px;
             width: 100%;
             top: 0;
             left: 0;
-            height: 380px;
+            height: 100%;
         }
         
     } 
@@ -179,7 +223,7 @@ $texto-servicios:17px;
     }
     .rse-contenedor{
         flex-direction: row;
-        height: 1200px;
+        height: 1510px;
         .imagen-rse{ 
             img{
                 position: relative;
@@ -190,8 +234,8 @@ $texto-servicios:17px;
         }
         .rse-texto-contenedor{
             width: 95%;
-            height: 970px;
-            top: 40%; 
+            height: 1295px;
+            top: 50%; 
             .texto-titulo-rse{
                 font-size: 18px;
             }
@@ -201,24 +245,15 @@ $texto-servicios:17px;
         }
     }
     /*----------Pagina Galeria Query---------*/
-    .somos-eco{
-        padding-top: 5px;
-        padding-bottom: 10px;
-        // hr{
-        //     display: none;
-        // }  
-        .titulo-galeria{
-            font-weight: bolder;
-            font-size: 20px;
-        } 
+    .titulos-principales{
         .texto-galeria{
             font-size: 16px;
-        }   
+        }  
     }
     .galeria-eco{
         margin-bottom: 10px;
         .carousel{
-            height: 500px;
+            height: 400px;
             .carousel-inner > .carousel-item > img {
                 height: 36vh;
   

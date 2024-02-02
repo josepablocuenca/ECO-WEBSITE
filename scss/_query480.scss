@@ -52,6 +52,10 @@ $texto-servicios:16px;
     }
     .green-block{
         height: 1040px;
+        .texto-servicios{
+            text-align:center;
+            font-size:35px;        
+        }
         .row{
             margin: 0;
             justify-content: center;

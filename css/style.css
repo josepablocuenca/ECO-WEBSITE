@@ -223,7 +223,6 @@ footer p {
 
 /*-Bloque Somos Eco Minera-*/
 .somos-ecominera {
-  /* height: 420px; */
   margin-top: 15px;
   text-align: center;
 }
@@ -551,7 +550,6 @@ footer p {
   height: 530px;
   border-radius: 10px;
   background-position: center;
-  /* background-size: cover; */
 }
 .trabaja-contenedor .separador {
   display: none;
@@ -851,7 +849,6 @@ footer p {
     display: block;
   }
   header .navbar .imagen-header {
-    /* background-image: url(img/EcoLogoCelular.png); */
     background-image: url(../img/HEADER.jpg);
     width: 250px;
     height: 55px;

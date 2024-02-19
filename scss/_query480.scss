@@ -51,7 +51,7 @@ $texto-servicios:16px;
         } 
     }
     .green-block{
-        height: 1040px;
+        height: 1090px;
         .texto-servicios{
             text-align:center;
             font-size:35px;        
@@ -142,16 +142,17 @@ $texto-servicios:16px;
             height: 160px;
             box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
             margin-top: 0px;
+            margin-left: 0.5%;
         }
         .grid-servicios-img1{
             padding-bottom: 3%;
             .img-perfo-desktop{
-                display: none;
-                margin-bottom: 0;
+              //  display: none;
+    
             }
-            .img-perfo-queries{
-                display: block;
-            }  
+                // .img-perfo-queries{
+                //     display: block;
+                // }  
         }
         .grid-texto-perfo{
             padding: 2%;

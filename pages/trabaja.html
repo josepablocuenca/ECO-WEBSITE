@@ -63,48 +63,58 @@
       
   </header>
    <main>
-        <section class="trabaja-contenedor">
-            <div class="imagen-contenedor">
-                 <div class="imagen-trabaja"></div>                
-            </div>
-            <p class="separador"><p>
-            <div class="form-contenedor">
-                <div class="pregunta-form">
-                  <h1>Querés trabajar con nosotros?</h1>
-                  <h2 style="color:darkslategrey;">Completa con tus datos y envialo!</h2>
-                </div>
-                <div class="trabaja-form">
-                  <form action="mailto:trabajaconnosotros@ecominera.com.ar" method="post">
-                      <ul>
-                          <li>
-                            <p><label for="nombre">Nombre:</label></p>
-                            <p><input type="text" id="nombre" name="user_name" /></p>          
-                          </li>
-                          <li>
-                            <p><label for="apellido">Apellido:</label></p>
-                            <p><input type="text" id="apellido" name="user_name" /> </p>
-                          </li>
-                          <li>
-                              <p><label for="mail">E-mail:</label></p>
-                              <p><input type="email" id="mail" name="user_mail" /> </p>
-                          </li>
-                          <li>
-                              <p><label for="msg">Subí tu CV:</label></p>
-                              <p><input type="file" name="archivosubido" accept=".pdf"></p>
-                          </li>
-                          <li>
-                            
-                            <p><button type="submit">Enviar!</button>
-                              <!-- <input class="btn btn-primary" type="submit" value="Submit"> -->
-                            </p>
-                          </li>
-                      </ul>
-                    </form>
+      <section class="titulos-principales">        
+        <h1>SOMOS ECO MINERA</h1>
+        <p class="texto-trabaja">Querés ser parte de nuestro equipo?</p>
+        <hr class="separador"></hr>
+      </section>
+      <section class="trabaja-contenedor">
+        <div class="imagen-contenedor">
+           <div class="imagen-trabaja"></div>                
+        </div>
+        <p class="separador"><p>
+        <div class="form-contenedor">
+          <div class="pregunta-form">
+            <h2>Completa con tus datos y envialo!</h2>
+            <h3 style="color:darkslategrey;"> Solo se contactaran por nuestros medios oficiales.</h3>
+          </div>
+          <div class="trabaja-form">
+            <form action="mailto:trabajaconnosotros@ecominera.com.ar" method="post">
+              <ul>
+                <li>
+                  <div class="mb-3">
+                    <label for="Nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="Nombre" placeholder="Juan">
+                  </div>        
+                </li>
+                <li>
+                  <div class="mb-3">
+                    <label for="Apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="Apellido" placeholder="Perez">
+                  </div>     
+                </li>
+                <li>
+                  <div class="mb-3">
+                    <label for="mail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="mail" placeholder="name@example.com">
                   </div>
+                </li>
+                <li>
+                  <div class="mb-3">
+                    <label for="formFile" class="form-label">Subi tu CV aquí</label>
+                    <input class="form-control" type="file" id="formFile" accept=".pdf">
+                  </div>
+                </li>
+                <li>    
+                  <p><button type="submit" class="btn btn-secondary btn-lg">Envialo!</button></p>            
+                </li>
+              </ul>
+            </form>
+          </div>
                 
-            </div>
+        </div>
            
-        </section>
+      </section>
    </main>
    <footer>
         <a href="https://instagram.com/eco.minera?igshid=OGQ5ZDc2ODk2ZA=="><img src="../img/instagram.png" alt="Instagram"></a>

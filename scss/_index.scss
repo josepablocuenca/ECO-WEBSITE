@@ -66,7 +66,7 @@
             border-color: #e6e3e3 transparent transparent transparent;
             left: 50%;
             transform: translateX(-50%) translateY(100%);
-          }
+        }
         .titulo-quienes{
             padding-top: 2%;
             text-decoration: overline underline;
@@ -108,28 +108,12 @@
     padding-top: 10%;
     background-color: white;
     height: 600px;
-    // color:#faf9fa;
 
-    // .texto-servicios{
-    //     padding-top: 3%;
-    //     padding-bottom: 2%;
-    //     color:#4d4a4a;
-    //     text-align:center;
-    //     font-size:45px;
-    //     font-weight:bolder;
-    //     // text-decoration: overline underline;
-    //     text-decoration-color: #1A5D1A;
-    //     text-decoration-thickness: 4px;
-    //     text-underline-offset: 8px;         
-    // }
     /*-Card Servicios-*/
     .col{
         margin: 2%;
     .card{
-        //background-color: green;
-        //background-color: rgb(5, 170, 5);
         background-color: #e6e3e3;
-        //text-align: left;
         padding: 2%;
         // margin: 4%;
         &:hover{
@@ -143,7 +127,6 @@
             margin-bottom: 10%;
             .card-title{
                 font-size: 35px;
-                //color: #fff;
                 color: #4d4a4a;
                 text-align:center;
             }
@@ -151,7 +134,6 @@
                 font-size:18px;
                 font-family:'Raleway', serif;
                 text-align: center;   
-                //color: #fff;
                 color: #4d4a4a;
             }
         }
@@ -160,13 +142,12 @@
 }
 
 .somos-eco {
-    /* height: 420px; */
     padding-top: 8%;
     margin-top: 15px;
     text-align: center;
     img{
         width: 300px;
-        height: 200px;
+        height: 160px;
         margin-bottom: 5%;
     }
     

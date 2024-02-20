@@ -7,7 +7,7 @@
     }
     .separador {
         margin-top: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         border: 0;
         height: 10px;
         background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);  
@@ -49,6 +49,7 @@
     }
     .grid-servicios-img1{
         grid-area: img1;
+        padding-top: 20px;
         .img-perfo-desktop{
             display:inline;      
         }  

@@ -36,45 +36,67 @@
         height: 10px;
     }
     .quienes-somos{
-        .titulo-quienes{
-            a{
-                font-size:32px; 
+        .triangle{
+            height: 45vh;
+            &::before {
+                transform: translateX(-50%) translateY(70%);
             }
-        }
-        .texto-quienes{
-            font-size:18px;  
-        }
+            .titulo-quienes{
+                a{
+                   font-size:30px; 
+                }
+            }
+            .texto-quienes{
+               font-size:17px; 
+               padding: 2%; 
+            } 
+        }       
     }
-    .green-block{
+    .white-block{
         height: 1340px;
+        padding-top: 100px;
         .texto-servicios{
             font-size:38px;   
         }
         .row{
-            align-items: center;
-            .card-body{
-                margin-bottom: 0;
-                .card-text{
-                    font-size:20px;
-                    font-family:'Raleway', serif;
-                    text-align: center;
+            justify-content: center;
+            .col{
+                margin: 4%;
+                .card-body{
+                    margin-bottom: 0;
+                    .card-text{
+                        font-size:20px;
+                        font-family:'Raleway', serif;
+                        text-align: center;
                     
+                    }
                 }
             }
         }
     }
     /*-Sección Somos Eco-*/    
-    .somos-ecominera{ 
+    .somos-eco{ 
+        padding-top: 20%;
         img{
-            width: 180px;
-            height: 120px;
+            width: 210px;
+            height: 150px;
+            margin-bottom: 0%;
         }
         p{
-            font-size:18px;  
+            font-size:18px;
+            padding: 2%;  
         }   
     }
     /*------------Pagina Nosotros Query-----------*/
-    
+    .titulos-principales{
+        .separador {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            border: 0;
+            height: 10px;
+            background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);  
+         }
+    }
     .grid-nosotros-contenedor{
         display: block;      
         img{
@@ -82,6 +104,9 @@
             height: 200px;
             box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
             margin: 2px;
+        }
+        p{
+            font-size: 16px;
         }
         .grid-imagen1{
             .imagen-desktop{
@@ -118,8 +143,18 @@
 
     } 
     /*------------Pagina Servicios Query-----------*/  
+    .titulos-principales{
+        .separador {
+            margin-top: 5px;
+            margin-bottom: 0px;
+            border: 0;
+            height: 10px;
+            background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);  
+         }
+    }
     .grid-servicios-contenedor{
         display: block; 
+        padding-top: 0px;
         img{
             width: 99%;
             height: 190px;
@@ -172,6 +207,11 @@
         }   
     } 
     /*-------------Pagina RSE Query----------*/
+    .titulos-principales{
+        h1{ 
+            font-size: 22px;
+        }
+    }
     .rse-contenedor{
         flex-direction: row;
         height: 1200px;
@@ -185,7 +225,7 @@
         }  
         .rse-texto-contenedor{
             width: 95%;
-            height: 960px;
+            height: 900px;
             top: 65%; 
             .texto-titulo-rse{
                 font-size: 18px;
@@ -196,31 +236,51 @@
         }   
     } 
     /*----------Pagina Galeria Query ---------*/
-
     .titulos-principales{
         .texto-galeria{
             font-size: 16px;
         }  
+        .separador{
+            margin-top: 0;
+        }
     }
-    .galeria-eco{
-        margin-bottom: 10px;
-        .carousel{
-            height: 400px;
-            .carousel-inner > .carousel-item > img {
-                height: 50vh;
-  
-            }
-        }  
-    }
+    .contenedor-carousel {
+        padding: 10px;
+        .carousel {
+          .carousel__slides {             
+              .carousel__slide {         
+                  figcaption {
+                      align-self: flex-end;
+                      padding: 0;
+                      flex: 0 0 auto;
+                      width: 0%;
+                      min-width: 0;     
+                    }
+                  }                
+              }             
+          }             
+      }
     /*----------Pagina Trabaja Query ----------*/
-    .trabaja-contenedor{
+    .titulos-principales{
+        .texto-trabaja{
+            font-size: 18px;
+        }
+        .separador {
+            margin-top: 5px;
+            border: 0;
+            height: 10px;
+            background-image: linear-gradient(to right, transparent, #3d3c3c, transparent);  
+         }
+      }
+      .trabaja-contenedor{
         flex-direction: column;
         margin: 0;
         margin-bottom: 20px;
         .imagen-contenedor{
             display: block;
             width: 100%;
-            margin-top: 80px;
+            object-fit:contain;
+            margin-top: 10px;
             .imagen-trabaja{
                 height: 250px;
                 background-size:cover;
@@ -230,18 +290,36 @@
         }
         .separador{
             display: block;
-            margin-top: 20px;
             height: 15px;
-    
+            margin-top: 10px;
+            margin-bottom: 0;
         }
         .form-contenedor{
             position: relative;
             width: 100%;
             top: 0;
             left: 0;
-            height: 380px;
+            height: 100%;
+            .pregunta-formm{
+                .trabaja-form{
+                    li{
+                        list-style-type: none;
+                        p{
+                            padding: 0;
+                            margin: 0; 
+                            input{
+                                width: 60%;
+                                height: 35px;
+                            }       
+                        }
+        
+                        
+                    }   
+                }
+            }    
         }
-    }
+        
+    } 
     /*------------Pagina Contactanos Query----------*/
     .donde-estamos-contenedor{
         display: flex;

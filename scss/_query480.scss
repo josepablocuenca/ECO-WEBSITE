@@ -19,13 +19,52 @@ $texto-servicios:16px;
         }
     } 
     /*-------footer Query-------*/
-    footer{
-        img{
-            width: 20px; 
-            margin: 1px;
-        }
-        p{
-        font-size: 12px;
+    footer{ 
+        .findus{         
+            flex-wrap: nowrap;
+            height: 180px;
+            padding: 0;
+            .encuentranos{
+               padding-left: 2%;
+               .tituloFooter{
+                    display: none;
+               }
+                .v-line {
+                    display: none;        
+                }
+                .contactos{
+                    p{
+                        color: rgb(95, 92, 92);
+                        font-size: 13px;
+                        text-align: left;
+                        img{
+                            width: 28px;
+                        }
+                    } 
+                }  
+         
+            }
+            .logoFooter{
+               // padding-left: 8%;
+                img{
+                    display: none;
+                }    
+            }
+            .siguenos{
+               padding-left: 1%;
+               .tituloFooter{
+                    display: none;
+                }
+               .socialmedia{
+                display: none;
+                padding-top: 0%;
+                }    
+            }
+        }       
+        .copyright{
+            p{ 
+                font-size: 13px;
+            } 
         }
     }
     /*--------Pagina Index Query---------*/
@@ -56,33 +95,42 @@ $texto-servicios:16px;
             } 
         }       
     }
-    .white-block{
-        height: 1090px;
-        padding-top: 100px;
-        .texto-servicios{
-            text-align:center;
-            font-size:35px;        
-        }
-        .row{
-            margin: 0;
-            justify-content: center;
-            .col{
-                margin: 4%;
-                .card-body{
-                    margin-bottom: 0;            
-                    .card-title {
-                        font-size:28px;
-                        font-family:'Raleway', serif;
-                        text-align: center;
-                        font-weight: bold;
-                    } 
-                    .card-text{
+    .servicios{
+        $color_white: #fff;
+        $color_prime: green;
+        $color_grey: #e2e2e2;
+        $color_grey_dark: #a2a2a2;
+        margin: 1%;
+  
+        padding-top: 18%;
+        .blog-card {
+           height: 180px;
+           .description {
+                h2{
+                    font-size: 2rem;
+                }
+                .v-line { 
+                    padding-top: 4%;         
+                }
+                .texto-perfo{
+                    display: none;
+                }
+           }
+           &.alt {
+                .description {
+                    .v-line {
+                        width: 75px; 
+                        padding-top: 4%;         
+                    }
+                    .texto-ms{
                         display: none;
                     }
-                } 
-            }       
-        }    
-    } 
+                }
+            }
+        }
+       
+         }   
+        
     /*-Sección Somos Eco-*/    
     .somos-eco{ 
         img{

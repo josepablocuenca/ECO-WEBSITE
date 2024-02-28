@@ -47,7 +47,6 @@
 .quienes-somos {
     height: 220px;
     margin: 1%;
-    // margin-top: 45px;
     margin-bottom: 2%;
     text-align: center;
     .triangle {
@@ -103,52 +102,132 @@
     
 }
 // /*-Bloque Servicios-*/
-.white-block{
-    // background: rgb(5, 170, 5);
-    padding-top: 10%;
-    background-color: white;
-    height: 600px;
+// CARDS
+.servicios{
+      $color_white: #fff;
+      $color_prime: green;
+      $color_grey: #e2e2e2;
+      $color_grey_dark: #a2a2a2;
+   
 
-    /*-Card Servicios-*/
-    .col{
-        margin: 2%;
-    .card{
-        background-color: #e6e3e3;
-        padding: 2%;
-        // margin: 4%;
-        &:hover{
-            -webkit-transform: scale(0.9);
-            -moz-transform: scale(0.9);
-            -o-transform: scale(0.9);
-            -ms-transform: scale(0.9);
-            transform: scale(0.9)
-        }
-        .card-body{
-            margin-bottom: 10%;
-            .card-title{
-                font-size: 35px;
-                color: #4d4a4a;
-                text-align:center;
+      padding-top: 13%;
+      padding-bottom: 5%;
+      //PRIMER TARJETA
+      .blog-card {
+         display: flex;
+        // flex-direction: column;
+         margin: 1rem auto;
+         box-shadow: 00 3px 70px 30px rgba(#000, .1);
+         margin-bottom: 1.6%;
+         background: $color_white;
+         line-height: 1.4;
+         font-family: sans-serif;
+         border-radius: 5px;
+         overflow: hidden;
+         //z-index: 0;
+         height: 250px;
+      
+         a {
+            color: inherit;
+            &:hover {
+               color: $color_prime;
             }
-            .card-text{
-                font-size:18px;
-                font-family:'Raleway', serif;
-                text-align: center;   
-                color: #4d4a4a;
+         }
+         &:hover {
+            .photo {
+               transform: scale(1.3) rotate(3deg);
             }
-        }
-    }
-    }
-}
-
-.somos-eco {
-    padding-top: 8%;
-    margin-top: 15px;
-    text-align: center;
-    img{
-        width: 300px;
-        height: 160px;
-        margin-bottom: 5%;
-    }
-    
-}    
+         }
+         .meta {
+            position: relative;
+            z-index: 0;
+           // height: 00px;
+           flex-basis: 40%;
+           height: auto;
+            .photo {
+               position: absolute;
+               top: 0;
+               right: 0;
+               bottom: 0;
+               left: 0;
+               background-size: cover;
+               background-position: center;
+               transition: transform .2s;
+            }
+         }
+         
+         .description {
+            padding: 1rem;
+            background: $color_white;
+            position: relative;
+            z-index: 1;
+            flex-basis: 70%;
+            &:before {
+               transform: skewX(-3deg);
+               content: "";
+               background: #fff;
+               width: 30px;
+               position: absolute;
+               left: -10px;
+               top: 0;
+               bottom: 0;
+               z-index: -1;
+            }
+            h2, h3 {
+               font-family: Poppins, sans-serif;
+            }
+            h2 {
+               line-height: 1;
+               margin: 0;
+               font-size: 3rem;
+            }
+            .v-line {
+               border-bottom: thick solid green;
+               width: 100px;
+               padding-left: 3%; 
+               padding-top: 1%;         
+           }
+            .texto-perfo{
+               font-size: 20px; 
+               position: relative;
+               margin: 1rem 0 0;
+            }
+            .read-more {
+               text-align: right;
+               a {
+                  color: $color_prime;
+                  display: inline-block;
+                  position: relative;
+                  &:after {
+                     content: "\f061";
+                     font-family: FontAwesome;
+                     margin-left: -10px;
+                     opacity: 0;
+                     vertical-align: middle;
+                     transition: margin .3s, opacity .3s;
+                  }
+                  &:hover:after {
+                     margin-left: 5px;
+                     opacity: 1;
+                  }
+               }
+            }
+         }
+         
+         &.alt {
+            flex-direction: row-reverse;
+            .description {
+               p {
+                  font-size: 20px; 
+                  position: relative;
+                  margin: 1rem 0 0;
+               }
+              
+           }
+         }  
+         max-width: 1700px;
+ 
+   }
+ 
+ }
+ 

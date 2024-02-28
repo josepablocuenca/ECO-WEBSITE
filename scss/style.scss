@@ -37,19 +37,13 @@ html{
 header{
     .menu-desktop{
         padding: 0.6rem;
-        background-color: #cec8c8;
-        /* visualización horizontalmente los items */
+        background-image: linear-gradient(to bottom, rgb(219, 215, 215), rgb(248, 245, 245));  
+       /* visualización horizontalmente los items */
         display: flex;
         /* alinea horizontalmente los items */
         justify-content: space-around;
         /*alinea vertical los items */
         align-items: center;
-        border-radius: 5px;
-        border:gray solid 1px;
-        /*dejamos fijo el header a medida que scrolleamos*/
-        /* position: sticky;
-        top: 0;
-        z-index: 1; */
 
         a{
             color: green;
@@ -80,25 +74,89 @@ header{
 }
 /* -------------- Footer --------------*/
 footer{
-    display:flex;
-    align-items: center;
-    background-color: #cec8c8;
-    border-radius: 5px;
-    //margin: 0.3%;
-    border: gray solid 1px;
-    padding: 0.4rem;
+    background-image: linear-gradient(to bottom, rgb(219, 215, 215), rgb(248, 245, 245));  
+    .findus{
+       display:flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+       align-content: normal;
+       padding: 1rem;
+       height: 300px;
 
-    img{
-        width: 28px; 
-        margin: 5px;
+        .encuentranos{
+           padding-left: 5%;
+           width: 450px;
+           .tituloFooter{
+              font-size: 25px;
+              color: rgb(95, 92, 92);
+           }
+           .v-line {
+                border-bottom: thick solid green;
+                width: 100px;
+                padding-left: 3%;          
+            }
+            .contactos{
+                padding-top: 5%;
+                p{
+                    color: rgb(95, 92, 92);
+                    font-size: 18px;
+                    text-align: left;
+                    img{
+                        width: 35px;
+                    }
+                } 
+            }            
+        }
+        .logoFooter{
+            padding-left: 8%;
+            img{
+                width: 300px;
+                padding-top: 80px;
+            }    
+        }
+        .siguenos{
+            padding-left: 13%;
+           .tituloFooter{
+              font-size: 25px;
+              color: rgb(95, 92, 92);
+            }
+           .v-line {
+               border-bottom: thick solid green;
+               width: 100px;
+               padding-left: 3%; 
+            }
+           .socialmedia{
+                padding-top: 5%;
+                a{      
+                  color: rgb(95, 92, 92);
+                  text-decoration: none; 
+                  p{
+                    color: rgb(95, 92, 92);
+                    font-size: 20px;
+                    text-align: left;
+                    img{
+                       padding-right: 5%;
+                       width: 50px;   
+                    }
+                    } 
+                }
+            }    
+        }
+    }       
+    .copyright{
+        text-align: center;
+        .separador-footer{
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border: 0;
+            height: 2px;
+            background-image: linear-gradient(to right, transparent, #3b3b3b, transparent);  
+        }
+        p{ 
+            color: rgb(95, 92, 92);
+            font-size: 20px;
+        } 
     }
-    p{
-        color: rgb(95, 92, 92);
-        font-weight: bolder;
-        font-size: 15px;
-        width: 85%;
-        text-align: right;
-    } 
 }
 
 @import "index.scss";
@@ -110,4 +168,3 @@ footer{
 @import "trabaja.scss";
 @import "query480.scss";
 @import "query481_978.scss";
-//@import "prueba.scss";

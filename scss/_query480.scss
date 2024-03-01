@@ -39,7 +39,6 @@ $texto-servicios:16px;
                 }
                 .contactos{
                     p{
-                      //  width: 400px;
                         color: rgb(95, 92, 92);
                         font-size: 13px;
                         text-align: left;
@@ -51,22 +50,10 @@ $texto-servicios:16px;
          
             }
             .logoFooter{
-                display: none;
-                // padding-left: 8%;
-                // img{
-                //     display: none;
-                // }    
+                display: none;   
             }
             .siguenos{
-          //      padding-left: 1%;
-                display: none;
-            //    .tituloFooter{
-            //         display: none;
-            //     }
-            //    .socialmedia{
-            //     display: none;
-            //     //padding-top: 0%;
-            //     }    
+                display: none;  
             }
         }       
         .copyright{
@@ -124,6 +111,9 @@ $texto-servicios:16px;
                 }
                 .texto-perfo{
                     display: none;
+                }
+                .read-more{
+                    padding-top: 5%;
                 }
            }
            &.alt {
@@ -296,7 +286,7 @@ $texto-servicios:16px;
         .rse-texto-contenedor{
             width: 95%;
             height: 900px;
-            top: 65%; 
+            top: 50%; 
             .texto-titulo-rse{
                 font-size: 18px;
             }

@@ -1001,6 +1001,9 @@ footer .copyright p {
   .servicios .blog-card .description .texto-perfo {
     display: none;
   }
+  .servicios .blog-card .description .read-more {
+    padding-top: 5%;
+  }
   .servicios .blog-card.alt .description .v-line {
     width: 75px;
     padding-top: 4%;
@@ -1145,7 +1148,7 @@ footer .copyright p {
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
     height: 900px;
-    top: 65%;
+    top: 50%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {
     font-size: 18px;
@@ -1264,6 +1267,7 @@ footer .copyright p {
     padding: 0;
   }
   footer .findus .encuentranos {
+    width: 470px;
     padding-left: 2%;
   }
   footer .findus .encuentranos .tituloFooter {
@@ -1280,18 +1284,11 @@ footer .copyright p {
   footer .findus .encuentranos .contactos p img {
     width: 28px;
   }
-  footer .findus .logoFooter img {
+  footer .findus .logoFooter {
     display: none;
   }
   footer .findus .siguenos {
-    padding-left: 1%;
-  }
-  footer .findus .siguenos .tituloFooter {
     display: none;
-  }
-  footer .findus .siguenos .socialmedia {
-    display: none;
-    padding-top: 0%;
   }
   footer .copyright p {
     font-size: 13px;

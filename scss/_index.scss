@@ -126,7 +126,6 @@
          font-family: sans-serif;
          border-radius: 5px;
          overflow: hidden;
-         //z-index: 0;
          height: 250px;
       
          a {
@@ -189,32 +188,32 @@
                padding-left: 3%; 
                padding-top: 1%;         
            }
-            .texto-perfo{
-               font-size: 20px; 
-               position: relative;
-               margin: 1rem 0 0;
-            }
-            .read-more {
-               text-align: right;
-               font-size: 23px;
-               a {
-                  color: $color_prime;
-                  display: inline-block;
-                  position: relative;
-                  &:after {
-                     content: "\f061";
-                     font-family: FontAwesome;
-                     margin-left: -10px;
-                     opacity: 0;
-                     vertical-align: middle;
-                     transition: margin .3s, opacity .3s;
-                  }
-                  &:hover:after {
-                     margin-left: 5px;
-                     opacity: 1;
-                  }
-               }
-            }
+           .texto-perfo{
+              font-size: 20px; 
+              position: relative;
+              margin: 1rem 0 0;
+           }
+           .read-more {
+              text-align: right;
+              font-size: 23px;
+              a {
+                 color: $color_prime;
+                 display: inline-block;
+                 position: relative;
+                 &:after {
+                    content: "\f061";
+                    font-family: FontAwesome;
+                    margin-left: -10px;
+                    opacity: 0;
+                    vertical-align: middle;
+                    transition: margin .3s, opacity .3s;
+                 }
+                 &:hover:after {
+                    margin-left: 5px;
+                    opacity: 1;
+                 }
+              }
+           }
          }
          
          &.alt {

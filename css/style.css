@@ -1137,7 +1137,7 @@ footer .copyright p {
   }
   .rse-contenedor {
     flex-direction: row;
-    height: 1200px;
+    height: 1300px;
   }
   .rse-contenedor .imagen-rse img {
     position: relative;
@@ -1147,7 +1147,7 @@ footer .copyright p {
   }
   .rse-contenedor .rse-texto-contenedor {
     width: 95%;
-    height: 1200px;
+    height: 1000px;
     top: 52%;
   }
   .rse-contenedor .rse-texto-contenedor .texto-titulo-rse {

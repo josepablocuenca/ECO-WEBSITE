@@ -936,6 +936,7 @@ footer .copyright p {
   }
   footer .findus .encuentranos {
     padding-left: 2%;
+    width: 400px;
   }
   footer .findus .encuentranos .tituloFooter {
     display: none;

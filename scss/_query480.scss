@@ -30,7 +30,7 @@ $texto-servicios:16px;
             padding: 0;
             .encuentranos{
                padding-left: 2%;
-               
+               width: 400px;
                .tituloFooter{
                     display: none;
                }
@@ -39,6 +39,7 @@ $texto-servicios:16px;
                 }
                 .contactos{
                     p{
+                      //  width: 400px;
                         color: rgb(95, 92, 92);
                         font-size: 13px;
                         text-align: left;

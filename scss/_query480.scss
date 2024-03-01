@@ -9,6 +9,8 @@ $texto-servicios:16px;
         }   
         .navbar{
             display: block; 
+            background-color: #a2a2a2;
+           // background-image: linear-gradient(to bottom, rgb(219, 215, 215), rgb(248, 245, 245));  
             .imagen-header{
                 background-image: url(../img/HEADER.jpg); 
                 width: 250px;
@@ -20,6 +22,7 @@ $texto-servicios:16px;
     } 
     /*-------footer Query-------*/
     footer{ 
+        
         .findus{         
             flex-wrap: nowrap;
             height: 180px;
@@ -223,6 +226,12 @@ $texto-servicios:16px;
         }
         .grid-servicios-img1{
             padding-bottom: 3%; 
+            .img-perfo-desktop{
+                display: none;
+            }
+            .img-perfo-queries{
+                display: block;
+            }
         }
         .grid-texto-perfo{
             padding: 2%;

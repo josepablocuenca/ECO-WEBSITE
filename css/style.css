@@ -58,8 +58,6 @@ header .menu-desktop a .imagen-header:hover {
 }
 header .navbar {
   display: none;
-  background-color: #cec8c8;
-  border: #79AC78 solid 2px;
 }
 
 /* -------------- Footer --------------*/
@@ -328,6 +326,7 @@ footer .copyright p {
 }
 .servicios .blog-card .description .read-more {
   text-align: right;
+  font-size: 23px;
 }
 .servicios .blog-card .description .read-more a {
   color: green;
@@ -349,8 +348,11 @@ footer .copyright p {
 .servicios .blog-card.alt {
   flex-direction: row-reverse;
 }
+.servicios .blog-card.alt .description .read-more {
+  font-size: 23px;
+}
 .servicios .blog-card.alt .description p {
-  font-size: 20px;
+  font-size: 22px;
   position: relative;
   margin: 1rem 0 0;
 }
@@ -654,6 +656,12 @@ footer .copyright p {
   padding: 0;
   position: absolute;
 }
+.contenedor-carousel .carousel > input:nth-of-type(12):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -1100%;
+}
+.contenedor-carousel .carousel > input:nth-of-type(11):checked ~ .carousel__slides .carousel__slide:first-of-type {
+  margin-left: -1000%;
+}
 .contenedor-carousel .carousel > input:nth-of-type(10):checked ~ .carousel__slides .carousel__slide:first-of-type {
   margin-left: -900%;
 }
@@ -712,6 +720,12 @@ footer .copyright p {
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
 }
 .contenedor-carousel .carousel > input:nth-of-type(10):checked ~ .carousel__thumbnails li:nth-of-type(6) {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+.contenedor-carousel .carousel > input:nth-of-type(11):checked ~ .carousel__thumbnails li:nth-of-type(5) {
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
+}
+.contenedor-carousel .carousel > input:nth-of-type(12):checked ~ .carousel__thumbnails li:nth-of-type(6) {
   box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.5);
 }
 .contenedor-carousel .carousel .carousel__slides {
@@ -905,6 +919,7 @@ footer .copyright p {
   }
   header .navbar {
     display: block;
+    background-color: #a2a2a2;
   }
   header .navbar .imagen-header {
     background-image: url(../img/HEADER.jpg);
@@ -1078,6 +1093,12 @@ footer .copyright p {
   .grid-servicios-contenedor .grid-servicios-img1 {
     padding-bottom: 3%;
   }
+  .grid-servicios-contenedor .grid-servicios-img1 .img-perfo-desktop {
+    display: none;
+  }
+  .grid-servicios-contenedor .grid-servicios-img1 .img-perfo-queries {
+    display: block;
+  }
   .grid-servicios-contenedor .grid-texto-perfo {
     padding: 2%;
     margin-top: 0;
@@ -1232,6 +1253,7 @@ footer .copyright p {
     display: none;
   }
   header .navbar {
+    background-image: linear-gradient(to bottom, rgb(219, 215, 215), rgb(248, 245, 245));
     display: block;
   }
   header .navbar .imagen-header {

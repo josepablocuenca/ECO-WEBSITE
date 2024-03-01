@@ -194,6 +194,7 @@
             }
             .read-more {
                text-align: right;
+               font-size: 23px;
                a {
                   color: $color_prime;
                   display: inline-block;
@@ -217,8 +218,11 @@
          &.alt {
             flex-direction: row-reverse;
             .description {
+               .read-more{
+                  font-size: 23px;
+               }
                p {
-                  font-size: 20px; 
+                  font-size: 22px; 
                   position: relative;
                   margin: 1rem 0 0;
                }

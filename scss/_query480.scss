@@ -22,7 +22,7 @@ $texto-servicios:16px;
     } 
     /*-------footer Query-------*/
     footer{ 
-        
+       
         .findus{         
             flex-wrap: nowrap;
             height: 180px;
@@ -90,6 +90,7 @@ $texto-servicios:16px;
             .titulo-quienes{
                 a{
                    font-size:30px; 
+           
                 }
             }
             .texto-quienes{
@@ -97,6 +98,7 @@ $texto-servicios:16px;
                padding: 2%; 
             } 
         }       
+        width: 479px;
     }
     .servicios{
         $color_white: #fff;

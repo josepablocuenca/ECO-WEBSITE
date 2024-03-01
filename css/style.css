@@ -930,7 +930,6 @@ footer .copyright p {
   }
   /*-------footer Query-------*/
   footer .findus {
-    display: none;
     flex-wrap: nowrap;
     height: 180px;
     padding: 0;
@@ -952,11 +951,10 @@ footer .copyright p {
   footer .findus .encuentranos .contactos p img {
     width: 28px;
   }
-  footer .findus .logoFooter img {
+  footer .findus .logoFooter {
     display: none;
   }
   footer .findus .siguenos {
-    padding-left: 1%;
     display: none;
   }
   footer .copyright p {

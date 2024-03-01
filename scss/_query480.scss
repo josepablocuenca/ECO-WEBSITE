@@ -17,19 +17,20 @@ $texto-servicios:16px;
                 height: 55px;
                 background-repeat: no-repeat;
                 object-fit: cover;
-            }                 
+            }                   
         }
     } 
     /*-------footer Query-------*/
     footer{ 
        
         .findus{        
-            display: none; 
+          //  display: none; 
             flex-wrap: nowrap;
             height: 180px;
             padding: 0;
             .encuentranos{
                padding-left: 2%;
+               
                .tituloFooter{
                     display: none;
                }
@@ -49,13 +50,14 @@ $texto-servicios:16px;
          
             }
             .logoFooter{
-               // padding-left: 8%;
-                img{
-                    display: none;
-                }    
+                display: none;
+                // padding-left: 8%;
+                // img{
+                //     display: none;
+                // }    
             }
             .siguenos{
-                padding-left: 1%;
+          //      padding-left: 1%;
                 display: none;
             //    .tituloFooter{
             //         display: none;
@@ -67,7 +69,6 @@ $texto-servicios:16px;
             }
         }       
         .copyright{
-           // display: none;
             p{ 
                 font-size: 13px;
             } 

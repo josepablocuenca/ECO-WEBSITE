@@ -955,6 +955,7 @@ footer .copyright p {
     display: none;
   }
   footer .findus .siguenos {
+    display: none;
     padding-left: 1%;
   }
   footer .findus .siguenos .tituloFooter {
@@ -962,7 +963,9 @@ footer .copyright p {
   }
   footer .findus .siguenos .socialmedia {
     display: none;
-    padding-top: 0%;
+  }
+  footer .copyright {
+    display: none;
   }
   footer .copyright p {
     font-size: 13px;
